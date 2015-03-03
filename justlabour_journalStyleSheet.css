@@ -105,7 +105,7 @@ a:active {
 
 #navbar a:hover {
     color: #ffffff;
-    background: #bc0033;
+  /*  background: #bc0033; */
     border-bottom: none;
 }
 
