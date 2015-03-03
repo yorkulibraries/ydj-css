@@ -1,0 +1,42 @@
+/**
+ * custom.css
+ *
+ * Copyright (c) 2003-2012 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ *
+ * $Id$
+ */
+
+#content {width:100%}
+ 
+#main {border:none;}
+ 
+#header {background-color: #ffffff;border:none;}
+
+#header h1 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: Garamond,'Times New Roman',Times,serif;
+	line-height:0%;
+}
+
+#table {border: 0;
+border-spacing: 0;
+font-size: 1.0em;
+}
+
+table.annoucements {width:0%;}
+
+#footer {background-color: #ffffff;}
+table.listing tr.fastTracked {background-color: #ffffff;}
+a {color: ;}
+a:link {color: ;}
+a:active {color: ;}
+a:visited {color: ;}
+a:hover {color: ;}
+input.defaultButton {color: ;}
+body {background-color: ;}
+input.defaultButton {background-color: ;}
+body {color: ;}
+input.defaultButton {color: ;}

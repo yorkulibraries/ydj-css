@@ -1,0 +1,508 @@
+/**
+ * common.css
+ *
+ * Copyright (c) 2003-2006 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared stylesheet.
+ *
+ * $Id: common.css,v 1.39 2006/07/01 17:36:16 alec Exp $
+ */
+
+/**
+ * Common HTML elements
+ */
+
+body {
+	margin: 0;
+	padding: 0;	
+	BACKGROUND-COLOR: #ffffff;
+	color: #111;
+	background-image: url('background.jpg');
+	background-repeat:repeat-y;
+	background-position:center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/** http://www.yorku.ca/akosavic/ojshome/YorkULogo.gif **/
+
+}
+
+div {
+	line-height: 140%;
+	text-align: left;
+}
+
+table {
+	border: 0px none;
+	border-spacing: 0;
+	font-size: 1.0em
+}
+
+form {
+	margin: 0;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:link {
+	color: #3f53a4;
+}
+
+a:active {
+	color: #3f53a4;
+}
+
+a:visited {
+	color: #6D6E71;
+}
+
+a:hover {
+	color: #ffffff;
+	background: #3f53a4;
+}
+
+a.plain {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0.25em 0 0.75em 0;
+	padding: 0 0 0 2.5em;
+}
+
+tt {
+	font-size: 1.25em;
+}
+
+label {
+}
+
+label.error {
+	color: #900;
+}
+
+INPUT.textField {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8
+}
+SELECT.selectMenu {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8
+}
+TEXTAREA.textArea {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8
+}
+INPUT.uploadField {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8
+}
+INPUT.button {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-SIZE: 1em; BACKGROUND-COLOR: #ffffff;
+}
+INPUT.defaultButton {
+	COLOR: #111111; BACKGROUND-COLOR: #ffffff;
+}
+
+
+/**
+ * Main layout elements
+ */
+
+#container {
+	line-height: 125%;
+	text-align: center;
+	margin: 0 auto;
+	background:transparent url('header.jpg');
+	background-repeat:no-repeat;
+	background-position:top;
+}
+
+#header {
+	padding: 0;
+	margin: 0 auto;
+	background-color: transparent;
+	text-align: center;
+	border-bottom:0px;
+	width:840px;
+}
+
+#headerTitle {
+	text-align: left;
+	margin: 0 auto;
+	padding: 0;
+	width: 840px;
+	background-color: transparent;	
+}
+
+#header h1 {
+	margin: 0 auto;	
+	padding: 0px 0px 0px 0px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:bold;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	color:#FFFFFF;
+
+}
+
+#body {
+	width: 840px;
+	margin: 0 auto;	
+	background-color: transparent;
+}
+
+#footer {
+	width: 100%;
+	min-height: 50px;
+	position: relative;
+	clear: both;
+	background-color: #ABA;
+	text-align: center;
+}
+
+#footerContent {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#rightSidebar {
+	float: right;
+	width: 16%;
+	padding-top: 25px;
+	font-size: 0.65em;
+	height: 100%;
+	margin-right: 15px;
+	margin-left: 15px;
+	overflow: visible;
+}
+#main {
+	PADDING-RIGHT: 0em; 
+	PADDING-LEFT: 0em; 
+	PADDING-BOTTOM: 0em; 
+	PADDING-TOP: 0em; 
+	BACKGROUND-COLOR: transparent; 
+	margin: 0 auto;
+	float: none;
+	width: 500px;
+	display: inline;
+	overflow: visible;
+}
+#main H2 {
+	PADDING-LEFT: 10px; FONT-WEIGHT: normal; FONT-SIZE: 1.15em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0.5em; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: transparent;
+}
+#main H3 {
+	PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 0.9em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0em; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: transparent
+}
+
+#navbar {
+	WIDTH: 800px; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; MARGIN: 0px; BORDER-BOTTOM: 0px dotted; color: #3f53a4;
+}
+
+#breadcrumb {
+	PADDING-LEFT: 15px; FONT-SIZE: 0.7em; PADDING-TOP: 0px; color:#999999;
+}
+
+#content {
+	PADDING-RIGHT: 0.5em; BORDER-TOP: #c12000 0px solid; PADDING-LEFT: 20px; FONT-SIZE: 0.7em; PADDING-BOTTOM: 3em; MARGIN: 0em 0em 6em 0.5em; WIDTH: 615px; PADDING-TOP: 0em
+}
+
+#content H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.6em; MARGIN: 0em 1em 0.25em 0em; LINE-HEIGHT: 0.9em; PADDING-TOP: 0.75em; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#content H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.5em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0.75em; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#content H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0.75em;
+}
+
+/**
+ * Navigation bar
+ */
+
+#navbar a {
+	font-size: 0.69em;
+	letter-spacing: 0em;
+	font-weight:900;
+	color:#000000;
+}
+#navbar a:link {
+color: #3f53a4;
+}
+
+#navbar a:active {
+color: #3f53a4;
+}
+
+#navbar a:visited {
+color: #3f53a4;
+}
+
+#navbar a:hover {
+color: #3f53a4;
+background:transparent;
+text-decoration:underline;
+}
+
+/**
+ * Sidebar
+ */
+
+#sidebar DIV.block {
+	FONT-SIZE: 1em; PADDING-BOTTOM: 1.5em; COLOR: #000000
+}
+#sidebar DIV.block SPAN.blockTitle {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 1em; PADDING-BOTTOM: 0.5em; TEXT-TRANSFORM: uppercase; COLOR: #000000; PADDING-TOP: 0.5em; LETTER-SPACING: 0.1em
+}
+#sidebar DIV.block SPAN.blockSubtitle {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: #000000; PADDING-TOP: 0px
+}
+#sidebar INPUT.textField {
+	FONT-SIZE: 1em
+}
+#sidebar SELECT.selectMenu {
+	FONT-SIZE: 1em
+}
+#sidebar INPUT.button {
+	FONT-SIZE: 1em
+}
+#sidebar A {
+	
+}
+#sidebar A:link {
+	COLOR: #000000
+}
+#sidebar A:active {
+	COLOR: #000000
+}
+#sidebar A:visited {
+	COLOR: #000000
+}
+#sidebar A:hover {
+	BACKGROUND: #000000; COLOR: #ffffff; TEXT-DECORATION: none
+}
+
+
+/**
+ * Breadcrumbs
+ */
+
+#breadcrumb A {
+	TEXT-DECORATION: none; color:#999999;
+}
+#breadcrumb A:link {
+	color:#999999;
+}
+#breadcrumb A:visited {
+	color:#999999;
+}
+#breadcrumb A:hover {
+	color:#999999;
+	background:transparent;
+	text-decoration:underline;
+}
+
+#breadcrumb A.current {
+	FONT-WEIGHT: bold
+}
+
+/**
+ * Footer elements
+ */
+
+#footer div.debugStats {
+	font-size: 0.6em;
+}
+
+
+/**
+ * Additional text styles
+ */
+
+span.disabled, label.disabled {
+	color: #666;
+}
+
+a.action, a.file {
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+
+a.icon {
+	text-decoration: none;
+}
+
+a.icon:hover {
+	background: none;
+}
+
+span.formRequired {
+	color: #333;
+	font-size: 0.9em;
+}
+
+span.instruct {
+}
+
+span.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+
+span.highlight {
+	border-bottom: 0px dotted #000;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+
+/**
+ * Table styles
+ */
+
+table.info {
+}
+
+table.info td {
+	padding: 0;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+}
+
+table.listing {
+}
+
+table.listing td {
+	padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
+table.listing tr.heading td, table.listing td.heading, table.info td.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 120%;
+	padding: 0.75em 0.5em 1em 0.5em;
+}
+
+table.info td.heading {
+	padding-left: 0;
+}
+
+
+table.listing td.nodata, table.info td.nodata {
+	text-align: center;
+	font-style: italic;
+}
+
+table.listing td.headseparator {
+	border-top: 0px dotted #000;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.listing td.endseparator {
+	border-top: 0px dotted #000;
+	font-size: 0.25em;
+	line-height: 10%;
+}
+
+table.listing td.separator, table.info td.separator {
+	border-top: 0px dotted #DDDDD0;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.data {
+}
+
+table.data tr {
+}
+
+table.data td {
+	padding-bottom: 0.25em;
+}
+
+table.data td.label {
+	padding-right: 1em;
+}
+
+table.data td.value {
+}
+
+table.data td.separator {
+	padding: 0.5em;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.data td.heading {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+table.nested tr {
+	padding: 0;
+	margin: 0;
+}
+
+span.nested {
+	padding: 0 4px 0 0;
+	font-size: 1.2em;
+}
+
+/**
+ * Form-specific elements
+ */
+
+span.formError {
+	color: #900;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+ul.formErrorList {
+	color: #900;
+}
+
+
+/**
+ * Other organizational elements
+ */
+
+UL.menu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL.menu LI {
+	PADDING-RIGHT: 1em; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL.menu LI.current {
+	FONT-WEIGHT: bold
+}
+UL.menu A {
+	FONT-SIZE: 0.85em; TEXT-TRANSFORM: uppercase; TEXT-DECORATION: none
+}
+UL.steplist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: decimal
+}
+UL.steplist LI {
+	PADDING-RIGHT: 0.5em; DISPLAY: inline; PADDING-LEFT: 0px; FONT-SIZE: 0.85em; PADDING-BOTTOM: 0px; MARGIN: 0px; TEXT-TRANSFORM: uppercase; PADDING-TOP: 0px
+}
+UL.steplist LI.current {
+	FONT-WEIGHT: bold
+}
+UL.steplist A {
+	TEXT-DECORATION: none
+}
+UL.plain {
+	PADDING-LEFT: 1.5em; LIST-STYLE-TYPE: none
+}
+
+div.separator {
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	padding: 0;
+	border-bottom: 0px dotted #000;
+	font-size: 0.5em;
+	line-height: 25%;
+}

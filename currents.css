@@ -1,0 +1,268 @@
+/**
+ * classicRed.css
+ *
+ * Copyright (c) 2003-2012 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Classic blue theme stylesheet.
+ *
+ * $Id$
+ */
+
+body {
+	background-color: #fff;
+	font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	outline:none;
+}
+
+a img {outline:none;}
+
+img {border:0;}
+
+a:link {
+	color: #660000;
+}
+
+a:active {
+	color: #993338;
+}
+
+a:visited {
+	color: #660000;
+}
+
+a:hover {
+	color: #660000;
+	background: transparent; 
+}
+
+#container {
+	background-color: #fff;
+	font-size: 1em;
+}
+
+#header {
+	min-height: 100px;
+	background-color: #fff;
+	
+}
+
+#header2 {
+	background: url("http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/162/witness-background.png") repeat-x scroll 0 0 #FFFFFF; 
+	height:220px;
+	background-color: #fff;
+	text-align: center;
+	padding-left:10%;
+}
+
+#sideMenu {
+	color:#ffffff;
+	font-size:medium;
+	background: transparent;
+} 
+
+#sideMenu.a {color:#fff;font-size:medium;}
+#sideMenu a:visited {color:#fff;font-size:medium;}
+#sideMenu a:hover {color:#fff;font-size:medium;}
+#sideMenu a:active {color:#fff;font-size:medium;}
+
+#headerTitle {
+	text-align: center;
+}
+
+#fadeshow1 {
+	background:#fc2020;
+	margin-top:10px;
+	position:absolute;
+}
+
+#header h1 {
+	line-height: 2.5;
+	font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-size: 2em;
+	background-color: #fff;
+	color:  #fff;
+	padding-left:10%;
+	padding-top:0em;
+	padding-bottom:0em;
+}
+
+#users {
+	overflow:auto;
+	height:600px;
+}
+
+#footer {
+	background-color: #600;
+	color:  #fff;
+}
+
+#footerContent {
+	color:  #fff;
+}
+
+#main {
+	background-color: #fff;
+	width:80%;
+	padding-top:0em;
+}
+
+#main h2 {
+	font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+
+#main h3 {
+	font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	text-transform: uppercase;
+}
+
+#navbar {
+	text-align: left; 
+	width:175px;
+	margin-right: 37px;
+	padding-left:1em;
+	border-bottom: none;
+	font-family: 'comic sans ms', sans-serif; 
+	font-size:medium;
+	color:#fff;
+	float:left;
+	background: url("http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/162/menu700px.jpg");
+	height:690px;
+}
+
+#navbar ul.menu {
+padding: 0;
+margin: 0;
+list-style: none;
+font-size:medium;
+}
+
+#navbar li.menu {
+	background:url("http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/162/maple-leaf.png");
+	background-repeat:no-repeat;
+	background-position:left 20px;
+	font-size:medium;
+}
+
+#breadcrumb {
+	line-height: 1.5em;
+	text-align: left;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size:1em;
+	width:565px;
+	margin-left:230px;
+}
+
+#content {
+	border-top: 1px dotted #660000;
+	width:565px;
+	margin-left:230px;
+	font-size:10pt;
+}
+
+#content h3 {
+	font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	text-transform: uppercase;
+}
+
+#content h4 {
+	font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	text-transform: uppercase;
+}
+
+#content h5 {
+	text-transform: uppercase;
+}
+
+ul.menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size:medium;
+}
+
+ul.menu li {
+	display:list-item;
+	padding:0.25em 0.5em 0.25em 25px;
+	text-transform:none;
+	background:url("http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/162/maple-leaf.png");
+	background-repeat:no-repeat;
+	background-position:left 18px;
+	font-size:25px;
+}
+
+ul.menu a {
+	text-transform: none;
+	color:#fff;
+	font-size:medium;
+}
+
+ul.menu a:visited {color:#fff;font-size:medium;}
+
+ul.menu a:hover {
+	color:#fff;font-size:medium;
+}
+
+ul.menu a:active {color:#fff;font-size:medium;}
+
+#rightSidebar ul,   {
+	margin-left: 0px;
+	padding-left: 0px;
+	font-size:medium;
+}
+
+#rightSidebar li,  {
+	list-style-type: none;
+	font-size:medium;
+}
+
+#leftSidebar ul {
+	margin-left: 0px;
+	padding-left: 0px;
+	font-size:medium;
+}
+
+#leftSidebar li {
+	list-style-type: none;
+	font-size:medium;
+}
+
+#leftSidebar a:link {color:#fff;font-size:medium;}
+#leftSidebar a:visited {color:#fff;font-size:medium;}
+#leftSidebar a:hover {color:#fff;font-size:medium;}
+#leftSidebar a:active {color:#fff;font-size:medium;}
+
+#sidebar {
+	width:1000px;
+}
+
+#rightSidebar  {
+	float:right;
+	padding: 1em 0em 1em 0em;
+	font-size: 0.65em;
+	height: 100%;
+	margin-right: 2%;
+	margin-left: 2%;
+	position:relative;
+}
+
+#leftSidebar {
+	display:none;
+	float:left;
+	width:170px;
+	padding-left:1em;
+	padding-right:1em;
+	font-size:medium;
+	height:700px;
+	margin-right: 2%;
+	background: url("http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/162/menu700px.jpg");
+	background-size: 220px;	
+} 

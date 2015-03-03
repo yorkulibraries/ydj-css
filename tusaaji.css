@@ -1,0 +1,496 @@
+/**
+ * common.css
+ *
+ * Copyright (c) 2003-2007 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared stylesheet.
+ *
+ * $Id: common.css,v 1.47 2007/11/14 22:36:20 asmecher Exp $
+ */
+
+/**
+ * Common HTML elements
+ */
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #333333;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+	line-height: 140%;
+	text-align: left;
+}
+
+table {
+	border: 0px none;
+	border-spacing: 0;
+	font-size: 1.0em
+}
+
+form {
+	margin: 0;
+}
+
+a:link {
+	color: #FFFFFF;
+}
+
+a:active {
+	color: #FFFFFF;
+}
+
+a:visited {
+	color: #FFFFFF;
+}
+
+a:hover {
+	color: #FFFFFF;
+	background: #333333;
+}
+
+ul {
+	margin: 0.25em 0 0.75em 0;
+	padding: 0 0 0 2.5em;
+}
+
+tt {
+	font-size: 1.25em;
+}
+
+#body a:active {text-decoration:underline;
+	color: #FFFFFF;}
+
+/**
+ * Main layout elements
+ */
+
+#articleAbstract h4 {
+	display:none
+}
+#articleAbstract img {float:left;}
+#articleAbstract {
+	background-color:#ffffff;
+	color:#111111;
+	padding:5px;
+}
+
+#leftSidebar {
+	width:225px;
+	margin-left:2%;
+	overflow:visible;
+}
+
+#sidebar div.block {
+	font-size: 1em;
+	padding-bottom: 4px;
+	padding-top: 1px;
+	width:225px;
+}
+
+#container {
+	line-height: 125%;
+	text-align: center;
+}
+
+#header {
+	padding: 0;
+	background-color: #333333;
+	float: right;
+	width: 860px;
+	display:none;
+}
+
+#smenu {
+	text-align:right;
+	color:#fff;
+	font-size:1.5em;
+}
+
+#headerTitle {
+	text-align: left;
+	padding: 0;
+}
+
+#header h1 {
+	padding: 0.5em 0 0.25em 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	line-height: 1em;
+	font-size:1.8em;
+}
+
+#body {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#footer {
+	min-height: 50px;
+	position: relative;
+	clear: both;
+	background-color: #ABA;
+	text-align: center;
+}
+
+#footerContent {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#main {
+	padding: 0px 0em 2em 0em;
+}
+
+#main h2 {
+	margin: 0em 1em 0.5em 0em;
+	padding-top: 0.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+#main h3 {
+	margin: 0em 1em 0.5em 0em;
+	padding-top: 0em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+#navbar {
+	margin-right: 0;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #fff;
+}
+
+#breadcrumb {
+	padding-top: 1em;
+	font-size: 0.7em;
+}
+
+#content {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+	font-size: 0.9em;
+	border-top: 1px solid #fff;
+}
+
+#content h3 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.8em;
+	line-height: 1.35em;
+}
+
+#content h4 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+#content h5 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+
+/**
+ * Navigation bar
+ */
+
+#navbar a {
+	font-size: 0.65em;
+	letter-spacing: 0.05em;
+	width:200px;
+}
+
+#navbar a:link {
+}
+
+#navbar a:active {
+}
+
+#navbar a:visited {
+}
+
+#navbar a:hover {
+}
+
+input.defaultButton {
+background-color: #e8e8e1;
+color: buttontext;
+}
+
+/**
+ * Breadcrumbs
+ */
+
+#breadcrumb a {
+	text-decoration: none;
+}
+
+#breadcrumb a.current {
+	font-weight: bold;
+}
+
+
+/**
+ * Footer elements
+ */
+
+#footer div.debugStats {
+	font-size: 0.6em;
+}
+
+
+/**
+ * Additional text styles
+ */
+
+span.disabled, label.disabled {
+	color: #666;
+}
+
+a.action, a.file {
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+
+a.icon {
+	text-decoration: none;
+}
+
+a.icon img {
+	border: 0px none;
+}
+
+a.icon:hover {
+	background: none;
+}
+
+span.formRequired {
+	color: #333;
+	font-size: 0.9em;
+}
+
+span.instruct {
+}
+
+span.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+
+span.highlight {
+	border-bottom: 1px dotted #fff;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+pre {
+	background-color: #F0F0E8;
+	color: #000;
+	font-size: 1.25em;
+}
+
+/**
+ * Table styles
+ */
+
+table.info {
+}
+
+table.info td {
+	padding: 0;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+}
+
+table.listing {
+}
+
+table.listing tr.highlight {
+	background: yellow;
+}
+
+table.listing td {
+	padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
+table.listing tr.heading td, table.listing td.heading, table.info td.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 120%;
+	padding: 0.75em 0.5em 1em 0.5em;
+}
+
+table.listing tr.fastTracked {
+	background-color: #ABA;
+}
+
+table.info td.heading {
+	padding-left: 0;
+}
+
+
+table.listing td.nodata, table.info td.nodata {
+	text-align: center;
+	font-style: italic;
+}
+
+table.listing td.headseparator {
+	border-top: 1px dotted #fff;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.listing td.endseparator {
+	border-top: 1px dotted #fff;
+	font-size: 0.25em;
+	line-height: 10%;
+}
+
+table.listing td.separator, table.info td.separator {
+	border-top: 1px dotted #fff;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.data {
+}
+
+table.data tr {
+}
+
+table.data td {
+	padding-bottom: 0.25em;
+}
+
+table.data td.label {
+	padding-right: 1em;
+}
+
+table.data td.value {
+}
+
+table.data td.separator {
+	padding: 0.5em;
+	font-size: 0.1em;
+	line-height: 1%;
+}
+
+table.data td.heading {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+table.nested tr {
+	padding: 0;
+	margin: 0;
+}
+
+span.nested {
+	padding: 0 4px 0 0;
+	font-size: 1.2em;
+}
+
+/**
+ * Form-specific elements
+ */
+
+span.formError {
+	color: #900;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+ul.formErrorList {
+	color: #900;
+}
+
+
+/**
+ * Other organizational elements
+ */
+
+ul.menu {
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	margin: 0;
+	padding: 0;
+	padding-right: 1.5em;
+	display: inline;
+}
+
+ul.menu li.current {
+	font-weight: bold;
+}
+
+ul.menu a {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+ul.steplist {
+	margin: 0;
+	padding: 0;
+	list-style-type: decimal;
+}
+
+ul.steplist li {
+	margin: 0;
+	padding: 0;
+	font-size: 0.85em;
+	padding-right: 0.5em;
+	display: inline;
+	text-transform: uppercase;
+}
+
+ul.steplist li.current {
+	font-weight: bold;
+}
+
+ul.steplist a {
+	text-decoration: none;
+}
+
+ul.plain {
+	list-style-type: none;
+	padding-left: 1.5em;
+}
+
+div.separator {
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	padding: 0;
+	border-bottom: 1px dotted #fff;
+	font-size: 0.5em;
+	line-height: 25%;
+}
+
+div.progressbar {
+	background-image: url('file:///C:/Documents%20and%20Settings/ajesus/Local%20Settings/Temporary%20Internet%20Files/Content.IE5/templates/images/progbg.gif');
+	background-repeat: no-repeat;
+	height: 27;
+	width: 505;
+	z-index:1
+}
