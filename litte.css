@@ -1,5 +1,5 @@
 /**
- * refugenew.css
+ * common.css
  *
  * Copyright (c) 2003-2006 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -8,19 +8,36 @@
  *
  * $Id: common.css,v 1.39 2006/07/01 17:36:16 alec Exp $
  */
- 
- /* These are to hide page elements */
+
+/* template changes */
+
+#register {
+    display:none;
+}
+
+#about {
+    display:none;
+}
+
+#login {
+    display:none;
+}
+
+#current {
+    display:none;
+}
+
 /**
- * Common HTML elements c1c2c3
+ * Common HTML elements
  */
 
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #669999;
-	background-image: url('none');
 	color: #111;
-	font-family: Verdana,Arial,Helvetica,sans-serif;
+	background: #5373a2 url(background3d.jpg) repeat-y center;
+	font-family: Verdana,Arial,Helvetica,sans-serif;\
+	/** http://www.yorku.ca/akosavic/ojshome/YorkULogo.gif **/
 
 }
 
@@ -35,6 +52,16 @@ table {
 	font-size: 1.0em
 }
 
+table.about {
+	margin-left: 15px;
+	background-color: #5373a2;
+	color: #FFFFFF;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
 form {
 	margin: 0;
 }
@@ -44,20 +71,20 @@ a {
 }
 
 a:link {
-	color: #ffffff;
+	color: #587b9e;
 }
 
 a:active {
-	color: #ffffff;
+	color: #587B9E;
 }
 
 a:visited {
-	color: #ffffff;
+	color: #587B9E;
 }
 
 a:hover {
-	color: #003333;
-	background: #ffffff;
+	color: #ffffff;
+	background: #587B9E;
 }
 
 a.plain {
@@ -86,19 +113,21 @@ input.textField, select.selectMenu, textarea.textArea, input.uploadField {
 	font-family: Verdana,Arial,Helvetica,sans-serif;
 	border-top: 2px solid #666;
 	border-left: 2px solid #666;
+	border-bottom: 2px solid #E8E8E1;
+	border-right: 2px solid #E8E8E1;
 	font-size: 1em;
 }
 
 input.button {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
-	background-color: #E8E8E1;
+	background-color: #587B9E;
 	font-size: 1em;
 }
 
 input.defaultButton {
-	background-color: #375;
-	color: #FBFBF3;
+	background-color: #587B9E;
+	color: #FFFFFF;
 	font-weight: bold;
 }
 
@@ -110,130 +139,120 @@ input.defaultButton {
 #container {
 	line-height: 125%;
 	text-align: center;
-	padding-bottom: 0.3em;
+	margin: 0 auto;
+	background-image: url(lrheader2.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
 }
 
 #header {
-	width: 900px;
+	padding: 0;
 	margin: 0 auto;
 	background-color: transparent;
-
-}
+	text-align: center;
+	height: 150px;
+	}
 
 #headerTitle {
-	width: 900px;
-	height: 120px;
-	margin-right: 0px;
 	text-align: left;
-	background-color: #669999;
-	background-image: url('none');
-	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding: 0;
+	width: 800px;
+	display:none;
 }
 
 #header h1 {
 	margin: 0 auto;
-	margin-left: 0.5em;
-	padding: 1em 0 0.5em 0;
-	font-family: Georgia,'Times New Roman',Times,serif;
+	padding: 0.5em 0 0.5em 0;
+	font-family: 'Trebuchet MS',Georgia,Times New Roman,Times,serif;
 	font-weight: normal;
-	font-size: 1.9em;
-	color: transparent;
+	font-size: 1.7em;
+
 }
 
 #body {
-	width: 900px;
+	width: 800px;
 	margin: 0 auto;
-	padding-left: 55px;
+	padding-left:20px;
 }
 
 #footer {
 	width: 100%;
 	min-height: 50px;
-	clear: both;
 	position: relative;
+	clear: both;
+	background-color: #ABA;
 	text-align: center;
 }
 
 #footerContent {
 	width: 800px;
 	margin: 0 auto;
-
 }
 
 #rightSidebar {
 	float: right;
 	width: 16%;
-	padding: 1.5em 0em 1em 0em;
+	padding: 2em 0em 1em 0em;
 	font-size: 0.65em;
 	height: 100%;
-	margin-right: 10%;
+	margin-right: 4%;
 	margin-left: 2%;
-	overflow: hidden;
+	overflow: visible;
 }
 
 #main {
-	width: 619px;
-	margin-right: 10px;
-	padding: 2em 0em 2em 0em;
-	background-color: #669999;
+	width: 600px;
+	margin: 0 auto;
+	padding: 5px 10px 2px 15px;
 	float: none;
 }
 
 #main h2 {
-	/**margin: 0em 1em 0.5em 0.5em;**/
-	margin: 0em 1em 0.5em 0.5em;
+	margin: 0em 1em 0.5em 0em;
+	padding-left: 0.65em;
 	padding-top: 0.5em;
-    font-family: Georgia,'Times New Roman',Times,serif;
+	font-family: Georgia,'Times New Roman',Times,serif;
 	font-weight: normal;
-	background-color: #669999;
-	font-size: 1.4em;
-	line-height: 3em;/*YDJ*/
-
 }
 
 #main h3 {
-	/**margin: 0em 1em 0.5em 0.5em;**/
-	margin: 0em 1em 0.5em 0.5em;
+	margin: 0em 1em 0.5em 0em;
 	padding-top: 0em;
 	font-family: Georgia,'Times New Roman',Times,serif;
 	font-weight: normal;
-	background-color: #669999;
-	font-size: 1.4em;
-
 }
 
 #navbar {
-	width: 635px;
 	margin-right: 0;
-	padding-left: 0.5em;
 	padding-bottom: 0;
-	border-bottom: 0px dotted #c12000;
-	background-color: #003333;
+	padding-top:3px;
+	background-color: 'transparent';
+	border-bottom:none;
+
 }
 
 #breadcrumb {
-	padding-top: 1em;
+	padding-left: 1.4em;
+	padding-top: 0em;
 	font-size: 0.7em;
-	padding-left: 1em;
-	line-height: 1.95em;/*YDJ*/
 }
 
 #content {
-	padding: 0em 0.5em 3em 0.5em;
-	margin: 0em 0em 0em .5em;
+	width: 70%;
+	margin-left: 1.5em;
+	padding: 0;
+	padding-top: 0.5em;
 	font-size: 0.7em;
-    width: 595px;
-    border-top: 0px solid #c12000;
-
-
+	border-top: 1px solid #999999;
 }
 
 #content h3 {
 	margin: 0em 1em 0.25em 0em;
 	padding-top: 0.75em;
- 	font-family: Georgia,'Times New Roman',Times,serif;
+	font-family: Georgia,'Times New Roman',Times,serif;
 	font-weight: normal;
-	font-size: 1.6em;
+	font-size: 1.8em;
 	line-height: 1.35em;
 }
 
@@ -258,26 +277,82 @@ input.defaultButton {
  */
 
 #navbar a {
-	font-size: 0.65em;
-	letter-spacing: 0.05em;
-	font-weight: 500;
+	font-size: 0.75em;
+	letter-spacing: 0em;
+	font-weight: bold;
 }
 
 #navbar a:link {
-color: #669999;
+color: #3d5d8c;
 }
 
 #navbar a:active {
-color: #669999;
+color: #3d5d8c;
 }
 
 #navbar a:visited {
-color: #669999;
+color: #3d5d8c;
 }
 
 #navbar a:hover {
-color: #ffffff;
-background: #669999;
+color: #999966;
+background: transparent;
+
+}
+
+
+/**
+ * Sidebar
+ */
+
+#developedBy {
+	text-transform: uppercase;
+	font-size: 0.95em;
+}
+
+#sidebar div.block {
+	font-size: 1em;
+	padding-bottom: 1.5em;
+}
+
+#sidebar div.block span.blockTitle {
+	display: block;
+	padding: 0.5em 0 0.5em 0;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+#sidebar div.block span.blockSubtitle {
+	display: block;
+	padding: 0;
+}
+
+#sidebar input.textField, #sidebar select.selectMenu, #sidebar input.button {
+	font-size: 1em;
+}
+
+#sidebar a {
+	text-decoration: none;
+}
+
+#sidebar a:link {
+color: #3d5d8c;
+}
+
+#sidebar a:active {
+color: #3d5d8c;
+}
+
+#sidebar a:visited {
+color: #3d5d8c;
+}
+
+#sidebar a:hover {
+color: #3d5d8c;
+text-decoration:underline;
+background:none;
+
 }
 
 
@@ -287,6 +362,25 @@ background: #669999;
 
 #breadcrumb a {
 	text-decoration: none;
+}
+
+#breadcrumb a:link {
+color: #3d5d8c;
+}
+
+#breadcrumb a:active {
+color: #3d5d8c;
+}
+
+#breadcrumb a:visited {
+color: #3d5d8c;
+}
+
+#breadcrumb a:hover {
+color: #3d5d8c;
+text-decoration:underline;
+background:none;
+
 }
 
 #breadcrumb a.current {
@@ -338,7 +432,7 @@ span.heading {
 }
 
 span.highlight {
-	border-bottom: 1px solid #8b7860;
+	border-bottom: 0px dotted #000;
 }
 
 .nowrap {
@@ -385,19 +479,19 @@ table.listing td.nodata, table.info td.nodata {
 }
 
 table.listing td.headseparator {
-	border-top: 1px solid #8b7860;
+	border-top: 0px dotted #000;
 	font-size: 0.1em;
 	line-height: 1%;
 }
 
 table.listing td.endseparator {
-	border-top: 1px solid #8b7860;
+	border-top: 0px dotted #000;
 	font-size: 0.25em;
 	line-height: 10%;
 }
 
 table.listing td.separator, table.info td.separator {
-	border-top: 1px solid #8b7860;
+	border-top: 0px dotted #DDDDD0;
 	font-size: 0.1em;
 	line-height: 1%;
 }
@@ -510,10 +604,11 @@ ul.plain {
 }
 
 div.separator {
-	width: 595px;
-	margin: 1em 0em 0.25em 0em;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
 	padding: 0;
-	border-bottom: 1px solid #8b7860;
+	border-bottom: 0px dotted #000;
 	font-size: 0.5em;
 	line-height: 25%;
 }
