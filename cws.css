@@ -10,6 +10,11 @@
  */
  
  /* These are to hide page elements */
+ 
+#registerAsReader {
+    display:none;
+}
+
 /**
  * Common HTML elements c1c2c3
  */
