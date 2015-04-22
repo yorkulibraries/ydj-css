@@ -1,5 +1,5 @@
 /**
- * refugenew.css
+ * common.css
  *
  * Copyright (c) 2003-2006 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -10,16 +10,19 @@
  */
 
 /**
- * Common HTML elements c1c2c3
+ * Common HTML elements
  */
 
 body {
 	margin: 0;
-	padding: 0;
-	background-color: #669999;
-	background-image: url('none');
+	padding: 0;	
+	BACKGROUND-COLOR: #ffffff;
 	color: #111;
-	font-family: Verdana,Arial,Helvetica,sans-serif;
+	background-image: url('background.jpg');
+	background-repeat:repeat-y;
+	background-position:center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/** http://www.yorku.ca/akosavic/ojshome/YorkULogo.gif **/
 
 }
 
@@ -43,20 +46,20 @@ a {
 }
 
 a:link {
-	color: #ffffff;
+	color: #3f53a4;
 }
 
 a:active {
-	color: #ffffff;
+	color: #3f53a4;
 }
 
 a:visited {
-	color: #ffffff;
+	color: #6D6E71;
 }
 
 a:hover {
-	color: #003333;
-	background: #ffffff;
+	color: #ffffff;
+	background: #3f53a4;
 }
 
 a.plain {
@@ -79,26 +82,23 @@ label.error {
 	color: #900;
 }
 
-input.textField, select.selectMenu, textarea.textArea, input.uploadField {
-	background-color: #F0F0E8;
-	color: #000;
-	font-family: Verdana,Arial,Helvetica,sans-serif;
-	border-top: 2px solid #666;
-	border-left: 2px solid #666;
-	font-size: 1em;
+INPUT.textField {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8
 }
-
-input.button {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	background-color: #E8E8E1;
-	font-size: 1em;
+SELECT.selectMenu {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8
 }
-
-input.defaultButton {
-	background-color: #375;
-	color: #FBFBF3;
-	font-weight: bold;
+TEXTAREA.textArea {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8
+}
+INPUT.uploadField {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8
+}
+INPUT.button {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-SIZE: 1em; BACKGROUND-COLOR: #ffffff;
+}
+INPUT.defaultButton {
+	COLOR: #111111; BACKGROUND-COLOR: #ffffff;
 }
 
 
@@ -109,174 +109,175 @@ input.defaultButton {
 #container {
 	line-height: 125%;
 	text-align: center;
-	padding-bottom: 0.3em;
+	margin: 0 auto;
+	background:transparent url('header.jpg');
+	background-repeat:no-repeat;
+	background-position:top;
 }
 
 #header {
-	width: 900px;
+	padding: 0;
 	margin: 0 auto;
 	background-color: transparent;
-
+	text-align: center;
+	border-bottom:0px;
+	width:840px;
 }
 
 #headerTitle {
-	width: 900px;
-	height: 120px;
-	margin-right: 0px;
 	text-align: left;
-	background-color: #669999;
-	background-image: url('none');
-	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding: 0;
+	width: 840px;
+	background-color: transparent;	
 }
 
 #header h1 {
-	margin: 0 auto;
-	margin-left: 0.5em;
-	padding: 1em 0 0.5em 0;
-	font-family: Georgia,'Times New Roman',Times,serif;
-	font-weight: normal;
-	font-size: 1.9em;
-	color: transparent;
+	margin: 0 auto;	
+	padding: 0px 0px 0px 0px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:bold;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	color:#FFFFFF;
+
 }
 
 #body {
-	width: 900px;
-	margin: 0 auto;
-	padding-left: 55px;
+	width: 840px;
+	margin: 0 auto;	
+	background-color: transparent;
 }
 
 #footer {
 	width: 100%;
 	min-height: 50px;
-	clear: both;
 	position: relative;
+	clear: both;
+	background-color: #ABA;
 	text-align: center;
 }
 
 #footerContent {
 	width: 800px;
 	margin: 0 auto;
-
 }
 
 #rightSidebar {
 	float: right;
 	width: 16%;
-	padding: 1.5em 0em 1em 0em;
+	padding-top: 25px;
 	font-size: 0.65em;
 	height: 100%;
-	margin-right: 10%;
-	margin-left: 2%;
-	overflow: hidden;
+	margin-right: 15px;
+	margin-left: 15px;
+	overflow: visible;
 }
-
 #main {
-	width: 619px;
-	margin-right: 10px;
-	padding: 2em 0em 2em 0em;
-	background-color: #669999;
+	PADDING-RIGHT: 0em; 
+	PADDING-LEFT: 0em; 
+	PADDING-BOTTOM: 0em; 
+	PADDING-TOP: 0em; 
+	BACKGROUND-COLOR: transparent; 
+	margin: 0 auto;
 	float: none;
+	width: 500px;
+	display: inline;
+	overflow: visible;
 }
-
-#main h2 {
-	/**margin: 0em 1em 0.5em 0.5em;**/
-	margin: 0em 1em 0.5em 0.5em;
-	padding-top: 0.5em;
-    font-family: Georgia,'Times New Roman',Times,serif;
-	font-weight: normal;
-	background-color: #669999;
-	font-size: 1.4em;
-	line-height: 3em;/*YDJ*/
-
+#main H2 {
+	PADDING-LEFT: 10px; FONT-WEIGHT: normal; FONT-SIZE: 1.15em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0.5em; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: transparent;
 }
-
-#main h3 {
-	/**margin: 0em 1em 0.5em 0.5em;**/
-	margin: 0em 1em 0.5em 0.5em;
-	padding-top: 0em;
-	font-family: Georgia,'Times New Roman',Times,serif;
-	font-weight: normal;
-	background-color: #669999;
-	font-size: 1.4em;
-
+#main H3 {
+	PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 0.9em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0em; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: transparent
 }
 
 #navbar {
-	width: 635px;
-	margin-right: 0;
-	padding-left: 0.5em;
-	padding-bottom: 0;
-	border-bottom: 0px dotted #c12000;
-	background-color: #003333;
+	WIDTH: 800px; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; MARGIN: 0px; BORDER-BOTTOM: 0px dotted; color: #3f53a4;
 }
 
 #breadcrumb {
-	padding-top: 1em;
-	font-size: 0.7em;
-	padding-left: 1em;
-	line-height: 1.95em;/*YDJ*/
+	PADDING-LEFT: 15px; FONT-SIZE: 0.7em; PADDING-TOP: 0px; color:#999999;
 }
 
 #content {
-	padding: 0em 0.5em 3em 0.5em;
-	margin: 0em 0em 0em .5em;
-	font-size: 0.7em;
-    width: 595px;
-    border-top: 0px solid #c12000;
-
-
+	PADDING-RIGHT: 0.5em; BORDER-TOP: #c12000 0px solid; PADDING-LEFT: 20px; FONT-SIZE: 0.7em; PADDING-BOTTOM: 3em; MARGIN: 0em 0em 6em 0.5em; WIDTH: 615px; PADDING-TOP: 0em
 }
 
-#content h3 {
-	margin: 0em 1em 0.25em 0em;
-	padding-top: 0.75em;
- 	font-family: Georgia,'Times New Roman',Times,serif;
-	font-weight: normal;
-	font-size: 1.6em;
-	line-height: 1.35em;
+#content H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.6em; MARGIN: 0em 1em 0.25em 0em; LINE-HEIGHT: 0.9em; PADDING-TOP: 0.75em; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-
-#content h4 {
-	margin: 0em 1em 0.25em 0em;
-	padding-top: 0.75em;
-	font-family: Georgia,'Times New Roman',Times,serif;
-	font-weight: normal;
-	font-size: 1.5em;
+#content H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.5em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0.75em; FONT-FAMILY: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-
-#content h5 {
-	margin: 0em 1em 0.25em 0em;
-	padding-top: 0.75em;
-	font-weight: bold;
-	font-size: 1em;
+#content H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0.75em;
 }
-
 
 /**
  * Navigation bar
  */
 
 #navbar a {
-	font-size: 0.65em;
-	letter-spacing: 0.05em;
-	font-weight: 500;
+	font-size: 0.69em;
+	letter-spacing: 0em;
+	font-weight:900;
+	color:#000000;
 }
-
 #navbar a:link {
-color: #669999;
+color: #3f53a4;
 }
 
 #navbar a:active {
-color: #669999;
+color: #3f53a4;
 }
 
 #navbar a:visited {
-color: #669999;
+color: #3f53a4;
 }
 
 #navbar a:hover {
-color: #ffffff;
-background: #669999;
+color: #3f53a4;
+background:transparent;
+text-decoration:underline;
+}
+
+/**
+ * Sidebar
+ */
+
+#sidebar DIV.block {
+	FONT-SIZE: 1em; PADDING-BOTTOM: 1.5em; COLOR: #000000
+}
+#sidebar DIV.block SPAN.blockTitle {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 1em; PADDING-BOTTOM: 0.5em; TEXT-TRANSFORM: uppercase; COLOR: #000000; PADDING-TOP: 0.5em; LETTER-SPACING: 0.1em
+}
+#sidebar DIV.block SPAN.blockSubtitle {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: #000000; PADDING-TOP: 0px
+}
+#sidebar INPUT.textField {
+	FONT-SIZE: 1em
+}
+#sidebar SELECT.selectMenu {
+	FONT-SIZE: 1em
+}
+#sidebar INPUT.button {
+	FONT-SIZE: 1em
+}
+#sidebar A {
+	
+}
+#sidebar A:link {
+	COLOR: #000000
+}
+#sidebar A:active {
+	COLOR: #000000
+}
+#sidebar A:visited {
+	COLOR: #000000
+}
+#sidebar A:hover {
+	BACKGROUND: #000000; COLOR: #ffffff; TEXT-DECORATION: none
 }
 
 
@@ -284,14 +285,24 @@ background: #669999;
  * Breadcrumbs
  */
 
-#breadcrumb a {
-	text-decoration: none;
+#breadcrumb A {
+	TEXT-DECORATION: none; color:#999999;
+}
+#breadcrumb A:link {
+	color:#999999;
+}
+#breadcrumb A:visited {
+	color:#999999;
+}
+#breadcrumb A:hover {
+	color:#999999;
+	background:transparent;
+	text-decoration:underline;
 }
 
-#breadcrumb a.current {
-	font-weight: bold;
+#breadcrumb A.current {
+	FONT-WEIGHT: bold
 }
-
 
 /**
  * Footer elements
@@ -337,7 +348,7 @@ span.heading {
 }
 
 span.highlight {
-	border-bottom: 1px solid #8b7860;
+	border-bottom: 0px dotted #000;
 }
 
 .nowrap {
@@ -384,19 +395,19 @@ table.listing td.nodata, table.info td.nodata {
 }
 
 table.listing td.headseparator {
-	border-top: 1px solid #8b7860;
+	border-top: 0px dotted #000;
 	font-size: 0.1em;
 	line-height: 1%;
 }
 
 table.listing td.endseparator {
-	border-top: 1px solid #8b7860;
+	border-top: 0px dotted #000;
 	font-size: 0.25em;
 	line-height: 10%;
 }
 
 table.listing td.separator, table.info td.separator {
-	border-top: 1px solid #8b7860;
+	border-top: 0px dotted #DDDDD0;
 	font-size: 0.1em;
 	line-height: 1%;
 }
@@ -458,61 +469,40 @@ ul.formErrorList {
  * Other organizational elements
  */
 
-ul.menu {
-	margin: 0;
-	padding: 0;
+UL.menu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
 }
-
-ul.menu li {
-	margin: 0;
-	padding: 0;
-	padding-right: 1.5em;
-	display: inline;
+UL.menu LI {
+	PADDING-RIGHT: 1em; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
 }
-
-ul.menu li.current {
-	font-weight: bold;
+UL.menu LI.current {
+	FONT-WEIGHT: bold
 }
-
-ul.menu a {
-	font-size: 0.85em;
-	text-transform: uppercase;
-	text-decoration: none;
+UL.menu A {
+	FONT-SIZE: 0.85em; TEXT-TRANSFORM: uppercase; TEXT-DECORATION: none
 }
-
-ul.steplist {
-	margin: 0;
-	padding: 0;
-	list-style-type: decimal;
+UL.steplist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: decimal
 }
-
-ul.steplist li {
-	margin: 0;
-	padding: 0;
-	font-size: 0.85em;
-	padding-right: 0.5em;
-	display: inline;
-	text-transform: uppercase;
+UL.steplist LI {
+	PADDING-RIGHT: 0.5em; DISPLAY: inline; PADDING-LEFT: 0px; FONT-SIZE: 0.85em; PADDING-BOTTOM: 0px; MARGIN: 0px; TEXT-TRANSFORM: uppercase; PADDING-TOP: 0px
 }
-
-ul.steplist li.current {
-	font-weight: bold;
+UL.steplist LI.current {
+	FONT-WEIGHT: bold
 }
-
-ul.steplist a {
-	text-decoration: none;
+UL.steplist A {
+	TEXT-DECORATION: none
 }
-
-ul.plain {
-	list-style-type: none;
-	padding-left: 1.5em;
+UL.plain {
+	PADDING-LEFT: 1.5em; LIST-STYLE-TYPE: none
 }
 
 div.separator {
-	width: 595px;
-	margin: 1em 0em 0.25em 0em;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
 	padding: 0;
-	border-bottom: 1px solid #8b7860;
+	border-bottom: 0px dotted #000;
 	font-size: 0.5em;
 	line-height: 25%;
 }

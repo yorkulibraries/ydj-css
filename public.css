@@ -1,3 +1,21 @@
+/* hidden elements */
+
+#about {
+    display:none;
+    }
+
+#current {
+    display:none;
+    }
+    
+#login {
+    display:none;
+    }
+
+#register {
+    display:none;
+    }
+
 BODY {
 	padding:0px; MARGIN: 0px; COLOR: #111; FONT-FAMILY: Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #ffffff;}
 DIV {
@@ -111,7 +129,8 @@ cmain H3 {
 	PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 1.1em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0em; FONT-FAMILY: Arial,Helvetica,sans-serif; BACKGROUND-COLOR: transparent
 }
 #navbar {
-	WIDTH: 600px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-bottom: 2px; MARGIN-LEFT: 211px; BORDER-BOTTOM: 0px dotted;background:#000000;top:54px;position:inherit;}
+	PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-bottom: 2px; BORDER-BOTTOM: 0px dotted; background:#000000;top:54px;position:inherit;}
+	
 #breadcrumb {
 	PADDING-LEFT: 7px; FONT-SIZE: 0.7em; PADDING-TOP: 0px; color:#999999;
 }

@@ -1,497 +1,530 @@
-BODY {
-    background-color: #FFFFFF;
-    background-image: url('background.jpg');
-    background-position:  center;
-    background-repeat: repeat-y;
-    color: #111111;
-    font-family: Arial,Helvetica,sans-serif;
-    margin: 0;
-    padding: 0
+/**
+ * caml.css
+ *
+ * Copyright (c) 2003-2006 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared stylesheet.
+ *
+ * $Id: common.css,v 1.39 2006/07/01 17:36:16 alec Exp $
+ */
+
+/**
+ * Common HTML elements
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #c0eafa;
+	background-image: url('https://www.library.yorku.ca/ojs/ojs-data/upload/web/caml/gradient1b.gif');
+	background-repeat: no-repeat;
+	color: #111;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
 }
-DIV {
-    line-height: 140%;
-    text-align: left;
+
+div {
+	line-height: 140%;
+	text-align: left;
 }
-TABLE {
-    border-left:0px none -moz-use-text-color; border-top:0px none -moz-use-text-color; border-bottom:0px none -moz-use-text-color; border-right:0px none; border-spacing: 0;
-    border-right-style:none; border-right-width:0px; font-size: 1em
+
+table {
+	border: 0px none;
+	border-spacing: 0;
+	font-size: 1.0em
 }
-FORM {
-    margin: 0;
+
+form {
+	margin: 0;
 }
-A {
-    text-decoration: underline;
+
+a {
+	text-decoration: underline;
 }
-A:link {
-    color: #000000;
+
+a:link {
+	color: #005782;
 }
-A:active {
-    color: #000000;
+
+a:active {
+	color: #005782;
 }
-A:visited {
-    color: #000000;
+
+a:visited {
+	color: #005782;
 }
-A:hover {
-    background: none repeat scroll 0 0 #000000;
-    color: #FFFFFF;
-    text-decoration: none;
+
+a:hover {
+	color: #ffffff;
+	background: #005782;
 }
-A.plain {
-    text-decoration: none;
+
+a.plain {
+	text-decoration: none;
 }
-UL {
-    margin: 0.25em 0 0.75em;
-    padding: 0 0 0 2.5em;
+
+ul {
+	margin: 0.25em 0 0.75em 0;
+	padding: 0 0 0 2.5em;
 }
-TT {
-    font-size: 1.25em;
+
+tt {
+	font-size: 1.25em;
 }
-LABEL {
+
+label {
 }
-LABEL.error {
-    color: #990000;
+
+label.error {
+	color: #900;
 }
-INPUT.textField {
-    background-color: #F0F0E8;
-    border-left: 2px solid #666666;
-    border-top: 2px solid #666666;
-    color: #000000;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 1em;
+
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+	background-color: #F0F0E8;
+	color: #000;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	border-top: 2px solid #666;
+	border-left: 2px solid #666;
+	border-bottom: 2px solid #E8E8E1;
+	border-right: 2px solid #E8E8E1;
+	font-size: 1em;
 }
-SELECT.selectMenu {
-    background-color: #F0F0E8;
-    border-left: 2px solid #666666;
-    border-top: 2px solid #666666;
-    color: #000000;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 1em;
+
+input.button {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: #E8E8E1;
+	font-size: 1em;
 }
-TEXTAREA.textArea {
-    background-color: #F0F0E8;
-    border-left: 2px solid #666666;
-    border-top: 2px solid #666666;
-    color: #000000;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 1em;
+
+input.defaultButton {
+	background-color: #375;
+	color: #FBFBF3;
+	font-weight: bold;
 }
-INPUT.uploadField {
-    background-color: #F0F0E8;
-    border-left: 2px solid #666666;
-    border-top: 2px solid #666666;
-    color: #000000;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 1em;
-}
-INPUT.button {
-    background-color: #999999;
-    font-size: 1em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-INPUT.defaultButton {
-    background-color: #999999;
-    color: #FBFBF3;
-    font-weight: bold;
-}
+
+
+
+/**
+ * Main layout elements
+ */
+
 #container {
-    height: 433px;
-    line-height: 125%;
-    padding-bottom: 0.3em;
-    padding-left: 0;
-    text-align: center;
+	line-height: 125%;
+	text-align: center;
 }
+
 #header {
-    background-color: transparent;
-    margin: 0 auto;
-    width: 870px;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #c0eafa;
+	border-bottom: none;
+	align: left;
+	background-image: url('https://www.library.yorku.ca/ojs/ojs-data/upload/web/caml/gradient1a.gif');
+	background-repeat: no-repeat;
+	/* height: 90px; */
+
 }
+
 #headerTitle {
-    background-color: #ff8e29;
-    height: 90px;
-    margin: 0 auto;
-    text-align: left;
-    width: 871px;
+	text-align: left;
+	margin: 0 auto;
+	padding: 0;
+	width: 800px;
 }
-#header H1 {
-    color: transparent;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 0;
-    font-weight: normal;
-    margin: 0 auto;
-    padding: 19px;
+
+#header h1 {
+	margin: 0 auto;
+	padding: 0.2em 0 0.2em 0;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
+	color: #005782;
+	font-size: 2.55em;
 }
+
 #body {
-    margin: 0 auto;
-    width: 835px;
+	width: 800px;
+	margin: 0 auto;
 }
+
 #footer {
-    clear: both;
-    min-height: 50px;
-    position: relative;
-    text-align: center;
-    width: 100%;
+	width: 100%;
+	min-height: 50px;
+	position: relative;
+	clear: both;
+	background-color: #ABA;
+	text-align: center;
 }
+
 #footerContent {
-    margin: 0 auto;
-    width: 825px;
+	width: 800px;
+	margin: 0 auto;
 }
+
 #rightSidebar {
-    float: right;
-    font-size: 0.65em;
-    height: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
-    overflow: visible;
-    padding-top: 25px;
-    width: 16%;
+	float: right;
+	width: 16%;
+	padding: 0em 0em 1em 0em;
+	font-size: 0.65em;
+	height: 100%;
+	margin-right: 4%;
+	margin-left: 2%;
+	overflow: visible;
 }
+
+
 #main {
-    background-color: transparent;
-    display: inline;
-    float: none;
-    margin: 0 auto;
-    overflow: visible;
-    padding: 0;
-    width: 500px;
+	width: 619px;
+	margin: 0 auto;
+	padding: 0.5em 0em 2em 0em;
+	background-color: #c0eafa;
+	float: left;
 }
-#main H2 {
-    background-color: transparent;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 1.15em;
-    font-weight: normal;
-    margin: 0 1em 0.5em 0.5em;
-    padding-left: 10px;
-    padding-top: 0.5em;
+
+#main h2 {
+	margin: 0em 1em 0.5em 0em;
+	padding-top: 0.5em;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
 }
-#main H3 {
-    background-color: transparent;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 1.1em;
-    font-weight: normal;
-    margin: 0 1em 0.5em 0.5em;
-    padding-left: 0;
-    padding-top: 0;
+
+#main h3 {
+	margin: 0em 1em 0.5em 0em;
+	padding-top: 0em;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
 }
+
 #navbar {
-    border-bottom: 0px dotted;
-    margin: 0;
-    padding-bottom: 0;
-    padding-left: 15px;
-    padding-top: 5px;
-    width: 625px
+	margin-right: 0;
+	padding-bottom: 0;
+	padding-left: 0.5em;
+	border-bottom: 0px none #000;
+	background-image: url('none');
+	background-color: #33bbeb;
+
 }
+
 #breadcrumb {
-    color: #999999;
-    font-size: 0.7em;
-    padding-left: 15px;
-    padding-top: 0;
+	padding-top: 1em;
+	font-size: 0.7em;
 }
+
 #content {
-    border-top: 0px solid #C12000;
-    font-size: 0.7em;
-    width: 615px; margin-left:0.5em; margin-right:0; margin-top:0; margin-bottom:6em; padding-left:20px; padding-right:0.5em; padding-top:0; padding-bottom:3em
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+	font-size: 0.7em;
+	background-color: #c0eafa;
+	border-top: 3px solid #64e6fd;
 }
-#content H3 {
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 1.6em;
-    font-weight: normal;
-    line-height: 1.35em;
-    margin: 0 1em 0.25em 0;
-    padding-top: 0.75em;
+
+#content h3 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
+	font-size: 1.8em;
+	line-height: 1.35em;
 }
-#content H4 {
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 1.5em;
-    font-weight: normal;
-    margin: 0 1em 0.25em 0;
-    padding-top: 0.75em;
+
+#content h4 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-family: Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
+	font-size: 1.5em;
 }
-#content H5 {
-    font-size: 1em;
-    font-weight: bold;
-    margin: 0 1em 0.25em 0;
-    padding-top: 0.75em;
+
+#content h5 {
+	margin: 0em 1em 0.25em 0em;
+	padding-top: 0.75em;
+	font-weight: bold;
+	font-size: 1em;
 }
+
+
+/**
+ * Navigation bar
+ */
+
 #navbar a {
-    color: #FF8E29;
-    font-size: 0.69em;
-    font-weight: 900;
-    letter-spacing: 0;
+	font-size: 0.65em;
+	letter-spacing: 0.05em;
+	font-weight: normal;
 }
+
 #navbar a:link {
-    color: #FF8E29;
+	color: #ffffff;
 }
+
 #navbar a:active {
-    color: #FF8E29;
+	color: #ffffff;
 }
+
 #navbar a:visited {
-    color: #FF8E29;
+	color: #ffffff;
 }
+
 #navbar a:hover {
-    background: none repeat scroll 0 0 transparent;
-    color: #FF8E29;
-    text-decoration: underline;
+	color: #005782;
+	background: #ffffff;
 }
-#developedBy {
-    font-size: 0.95em;
-    text-transform: uppercase;
+
+
+
+/**
+ * Breadcrumbs
+ */
+
+#breadcrumb a {
+	text-decoration: none;
 }
-#sidebar DIV.block {
-    color: #000000;
-    font-size: 1em;
-    padding-bottom: 1.5em;
+
+#breadcrumb a.current {
+	font-weight: bold;
 }
-#sidebar DIV.block SPAN.blockTitle {
-    color: #000000;
-    display: block;
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    padding: 0.5em 0;
-    text-transform: uppercase;
+
+
+/**
+ * Footer elements
+ */
+
+#footer div.debugStats {
+	font-size: 0.6em;
 }
-#sidebar DIV.block SPAN.blockSubtitle {
-    color: #000000;
-    display: block;
-    padding: 0;
+
+
+/**
+ * Additional text styles
+ */
+
+span.disabled, label.disabled {
+	color: #666;
 }
-#sidebar INPUT.textField {
-    font-size: 1em;
+
+a.action, a.file {
+	font-size: 0.85em;
+	text-transform: uppercase;
 }
-#sidebar SELECT.selectMenu {
-    font-size: 1em;
+
+a.icon {
+	text-decoration: none;
 }
-#sidebar INPUT.button {
-    font-size: 1em;
+
+a.icon:hover {
+	background: none;
 }
-#sidebar A {
+
+span.formRequired {
+	color: #333;
+	font-size: 0.9em;
 }
-#sidebar A:link {
-    color: #000000;
+
+span.instruct {
 }
-#sidebar A:active {
-    color: #000000;
+
+span.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
 }
-#sidebar A:visited {
-    color: #000000;
+
+span.highlight {
+	border-bottom: 1px solid #64e6fd;
 }
-#sidebar A:hover {
-    background: none repeat scroll 0 0 #000000;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-#breadcrumb A {
-    color: #999999;
-    text-decoration: none;
-}
-#breadcrumb A:link {
-    color: #999999;
-}
-#breadcrumb A:visited {
-    color: #999999;
-}
-#breadcrumb A:hover {
-    background: none repeat scroll 0 0 transparent;
-    color: #999999;
-    text-decoration: underline;
-}
-#breadcrumb A.current {
-    font-weight: bold;
-}
-#footer DIV.debugStats {
-    font-size: 0.6em;
-}
-SPAN.disabled {
-    color: #666666;
-}
-LABEL.disabled {
-    color: #666666;
-}
-A.action {
-    font-size: 0.85em;
-    text-transform: uppercase;
-}
-A.file {
-    font-size: 0.85em;
-    text-transform: uppercase;
-}
-A.icon {
-    text-decoration: none;
-}
-A.icon:hover {
-    background: none repeat scroll 0 0 transparent;
-}
-SPAN.formRequired {
-    color: #333333;
-    font-size: 0.9em;
-}
-SPAN.instruct {
-}
-SPAN.heading {
-    font-size: 0.85em;
-    text-transform: uppercase;
-}
-SPAN.highlight {
-    border-bottom: 1px solid #8B7860;
-}
+
 .nowrap {
-    white-space: nowrap;
+	white-space: nowrap;
 }
-TABLE.info {
+
+
+/**
+ * Table styles
+ */
+
+table.info {
 }
-TABLE.info TD {
-    padding: 0 0.5em 0.5em 0;
+
+table.info td {
+	padding: 0;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
 }
-TABLE.listing {
+
+table.listing {
 }
-TABLE.listing TD {
-    padding: 0.25em 0.5em;
+
+table.listing td {
+	padding: 0.25em 0.5em 0.25em 0.5em;
 }
-TABLE.listing TR.heading TD {
-    font-size: 0.85em;
-    font-weight: normal;
-    line-height: 120%;
-    padding: 0.75em 0.5em 1em;
-    text-transform: uppercase;
+
+table.listing tr.heading td, table.listing td.heading, table.info td.heading {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 120%;
+	padding: 0.75em 0.5em 1em 0.5em;
 }
-TABLE.listing TD.heading {
-    font-size: 0.85em;
-    font-weight: normal;
-    line-height: 120%;
-    padding: 0.75em 0.5em 1em;
-    text-transform: uppercase;
+
+table.info td.heading {
+	padding-left: 0;
 }
-TABLE.info TD.heading {
-    font-size: 0.85em;
-    font-weight: normal;
-    line-height: 120%;
-    padding: 0.75em 0.5em 1em;
-    text-transform: uppercase;
+
+
+table.listing td.nodata, table.info td.nodata {
+	text-align: center;
+	font-style: italic;
 }
-TABLE.info TD.heading {
-    padding-left: 0;
+
+table.listing td.headseparator {
+	border-top: 1px solid #64e6fd;
+	font-size: 0.1em;
+	line-height: 1%;
 }
-TABLE.listing TD.nodata {
-    font-style: italic;
-    text-align: center;
+
+table.listing td.endseparator {
+	border-top: 1px solid #64e6fd;	
+	font-size: 0.25em;
+	line-height: 10%;
 }
-TABLE.info TD.nodata {
-    font-style: italic;
-    text-align: center;
+
+table.listing td.separator, table.info td.separator {
+	border-top: 1px solid #64e6fd;
+	font-size: 0.1em;
+	line-height: 1%;
 }
-TABLE.listing TD.headseparator {
-    border-top: 1px solid #8B7860;
-    font-size: 0.1em;
-    line-height: 1%;
+
+table.data {
 }
-TABLE.listing TD.endseparator {
-    border-top: 1px solid #8B7860;
-    font-size: 0.25em;
-    line-height: 10%;
+
+table.data tr {
 }
-TABLE.listing TD.separator {
-    border-top: 1px solid #8B7860;
-    font-size: 0.1em;
-    line-height: 1%;
+
+table.data td {
+	padding-bottom: 0.25em;
 }
-TABLE.info TD.separator {
-    border-top: 1px solid #8B7860;
-    font-size: 0.1em;
-    line-height: 1%;
+
+table.data td.label {
+	padding-right: 1em;
 }
-TABLE.data {
+
+table.data td.value {
 }
-TABLE.data TR {
+
+table.data td.separator {
+	padding: 0.5em;
+	font-size: 0.1em;
+	line-height: 1%;
 }
-TABLE.data TD {
-    padding-bottom: 0.25em;
+
+table.data td.heading {
+	padding-left: 0;
+	padding-right: 0;
 }
-TABLE.data TD.label {
-    padding-right: 1em;
+
+table.nested tr {
+	padding: 0;
+	margin: 0;
 }
-TABLE.data TD.value {
+
+span.nested {
+	padding: 0 4px 0 0;
+	font-size: 1.2em;
 }
-TABLE.data TD.separator {
-    font-size: 0.1em;
-    line-height: 1%;
-    padding: 0.5em;
+
+/**
+ * Form-specific elements
+ */
+
+span.formError {
+	color: #900;
+	font-weight: bold;
+	font-size: 1em;
 }
-TABLE.data TD.heading {
-    padding-left: 0;
-    padding-right: 0;
+
+ul.formErrorList {
+	color: #900;
 }
-TABLE.nested TR {
-    margin: 0;
-    padding: 0;
+
+
+/**
+ * Other organizational elements
+ */
+
+ul.menu {
+	margin: 0;
+	padding: 0;
 }
-SPAN.nested {
-    font-size: 1.2em;
-    padding: 0 4px 0 0;
+
+ul.menu li {
+	margin: 0;
+	padding: 0;
+	padding-right: 1.5em;
+	display: inline;
 }
-SPAN.formError {
-    color: #990000;
-    font-size: 1em;
-    font-weight: bold;
+
+ul.menu li.current {
+	font-weight: bold;
 }
-UL.formErrorList {
-    color: #990000;
+
+ul.menu a {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	text-decoration: none;
 }
-UL.menu {
-    margin: 0;
-    padding: 0;
+
+ul.steplist {
+	margin: 0;
+	padding: 0;
+	list-style-type: decimal;
 }
-UL.menu LI {
-    display: inline;
-    margin: 0;
-    padding: 0 1em 0 0;
+
+ul.steplist li {
+	margin: 0;
+	padding: 0;
+	font-size: 0.85em;
+	padding-right: 0.5em;
+	display: inline;
+	text-transform: uppercase;
 }
-UL.menu LI.current {
-    font-weight: bold;
+
+ul.steplist li.current {
+	font-weight: bold;
 }
-UL.menu A {
-    font-size: 0.85em;
-    text-decoration: none;
-    text-transform: uppercase;
+
+ul.steplist a {
+	text-decoration: none;
 }
-UL.steplist {
-    list-style-type: decimal;
-    margin: 0;
-    padding: 0;
+
+ul.plain {
+	list-style-type: none;
+	padding-left: 1.5em;
 }
-UL.steplist LI {
-    display: inline;
-    font-size: 0.85em;
-    margin: 0;
-    padding: 0 0.5em 0 0;
-    text-transform: uppercase;
+
+div.separator {
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	padding: 0;
+	border-bottom: 1px solid #64e6fd;
+	font-size: 0.5em;
+	line-height: 25%;
 }
-UL.steplist LI.current {
-    font-weight: bold;
+
+/**
+ * Homepage image
+ */
+
+#homepageImage img {
+	display: inline;
+	margin: 0 auto;
+	border: 0px none;
+	text-align: left
 }
-UL.steplist A {
-    text-decoration: none;
-}
-UL.plain {
-    list-style-type: none;
-    padding-left: 1.5em;
-}
-DIV.separator {
-    border-bottom: 1px solid #8B7860;
-    font-size: 0.5em;
-    line-height: 25%;
-    margin: 1em 0 0.25em;
-    padding: 0;
-    width: 595px;
-}
-.tocGalleys {
-    text-align: right;
-}
-.tocTitle {
-    font-size: 110%;
-}
-.tocAuthors {
-    font-style: italic;
-}
-.issueCoverImage img {
-    width: 125px;
+
+.homepageImage img {
+	border: 0px none;
+	float: none;
+	width: 100px;
+	text-align: left; margin-left:0; margin-right:1em; margin-top:1em; margin-bottom:1em;
 }
