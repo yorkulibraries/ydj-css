@@ -16,9 +16,9 @@
 body {
 	margin: 0;
 	padding: 0;
-	color: #ffffff;
+	color: #111;
 	/* background-image: url('background.jpg'); */
-	background-color: #071F5D; 
+	background-color: #ffffff; 
 	background-repeat:repeat-y;
 	background-position:center;
 	font-family: Verdana,Arial,Helvetica,sans-serif;
@@ -147,10 +147,9 @@ input.defaultButton {
 }
 
 #body {
-	width: 800px;
+	/*width: 800px;*/
 	margin: 0 auto;
 	padding-left:20px;
-	background:#587B9E;
 }
 
 #footer {
@@ -163,26 +162,24 @@ input.defaultButton {
 }
 
 #footerContent {
-	width: 800px;
+	/*width: 800px;*/
 	margin: 0 auto;
 }
 
 #rightSidebar {
 	float: right;
-	width: 16%;
+	width: 10%;
 	padding: 2em 0em 1em 0em;
 	font-size: 0.65em;
 	height: 100%;
-	margin-right: 4%;
-	margin-left: 2%;
 	overflow: visible;
+	margin-right:20%;
 }
 
 #main {
-	width: 600px;
-	margin: 0 auto;
-	padding: 5px 10px 2px 15px;
-	float: none;
+	width: 50%;
+	padding: 5px 0px 2px 5px;
+	margin-left:17%;
 }
 
 #main h2 {
@@ -215,7 +212,6 @@ input.defaultButton {
 }
 
 #content {
-	width: 70%;
 	margin-left: 1.5em;
 	padding: 0;
 	padding-top: 0.5em;
