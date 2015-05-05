@@ -1,0 +1,375 @@
+/**
+ * common.css
+ *
+ * Copyright (c) 2003-2006 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared stylesheet.
+ *
+ * $Id: common.css,v 1.39 2006/07/01 17:36:16 alec Exp $
+ */
+
+/**
+ * Common HTML elements
+ */
+
+
+BODY {
+	padding:0px; 
+	MARGIN: 0px; 
+	COLOR: #111; 
+	FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+	BACKGROUND-COLOR: #e5e5e5;
+}
+DIV {
+	LINE-HEIGHT: 140%; TEXT-ALIGN: left;
+}
+TABLE {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 1em; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; border-spacing: 0;
+}
+FORM {
+	MARGIN: 0px;
+}
+A {
+	TEXT-DECORATION: underline;
+}
+A:link {
+	COLOR: #B71F1D;
+}
+A:active {
+	COLOR: #B71F1D;
+}
+A:visited {
+	COLOR: #B71F1D;
+}
+A:hover {
+	BACKGROUND: #ff6600; COLOR: #B71F1D; 
+	TEXT-DECORATION: none;
+}
+A.plain {
+	TEXT-DECORATION: none;
+}
+UL {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 2.5em; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0.25em 0px 0.75em; 
+	PADDING-TOP: 0px;
+}
+TT {
+	FONT-SIZE: 1.25em;
+}
+LABEL {
+	
+}
+LABEL.error {
+	COLOR: #900;
+}
+INPUT.textField {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+	BACKGROUND-COLOR: #f0f0e8;
+}
+SELECT.selectMenu {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+	BACKGROUND-COLOR: #f0f0e8;
+}
+TEXTAREA.textArea {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+	BACKGROUND-COLOR: #f0f0e8;
+}
+INPUT.uploadField {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+	BACKGROUND-COLOR: #f0f0e8;
+}
+INPUT.button {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-SIZE: 1em; BACKGROUND-COLOR: #f0f0e8; 
+	COLOR: #333333;
+}
+INPUT.defaultButton {
+	FONT-WEIGHT: bold; COLOR: #333333; 
+	BACKGROUND-COLOR: #f0f0e8;
+}
+
+#container {
+	PADDING-BOTTOM: 0.3em; LINE-HEIGHT: 125%; 
+	TEXT-ALIGN: center; 
+}
+#header {
+	MARGIN: 0px auto; WIDTH: 901px; 
+	BACKGROUND-COLOR: transparent;
+}
+#headerTitle {
+	BACKGROUND-IMAGE: url('header.jpg'); WIDTH: 901px; MARGIN-RIGHT: 181px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 117px; BACKGROUND-COLOR: #ffffff; 
+	TEXT-ALIGN: left;
+}
+#header H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; COLOR: transparent; PADDING-TOP: 0px; 
+	FONT-FAMILY: Georgia,'Times New Roman',Times,serif;
+}
+#body {
+	MARGIN: 0px auto; WIDTH: 901px;
+}
+#bottom{
+	background-image: url('footer.jpg'); WIDTH: 901px; HEIGHT: 116px;
+}
+
+#footer {
+	CLEAR: both; MIN-HEIGHT: 50px; WIDTH: 100%; POSITION: relative; TEXT-ALIGN: center; 
+}
+#footerContent {
+	MARGIN: 0px auto; WIDTH: 901px;
+}
+
+#rightSidebar {
+	float: right;
+	width: 14%;
+	padding: 1em 0em 1em 0em;
+	font-size: 0.65em;
+	height: 100%;
+	margin-right: 0%;
+	margin-left: 2%;
+	overflow: visible;
+}
+
+
+
+#main {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; WIDTH: 750px; PADDING-TOP: 0em; BACKGROUND-COLOR: #ffffff; margin: 0 auto;
+}
+#main H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.3em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0.5em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif; BACKGROUND-COLOR: #ffffff;
+}
+#main H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.1em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif; BACKGROUND-COLOR: #ffffff;
+}
+#navbar {
+	PADDING-LEFT: 0.5em; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #c12000 0px dotted; BACKGROUND-COLOR: #C9EBF3;
+}
+#breadcrumb {
+	PADDING-LEFT: 1em; FONT-SIZE: 0.7em; PADDING-TOP: 1em
+}
+#content {
+	PADDING-RIGHT: 0.5em; BORDER-TOP: #c12000 0px solid; PADDING-LEFT: 0.5em; FONT-SIZE: 0.7em; PADDING-BOTTOM: 3em; MARGIN: 0em 0em 0em 0.5em; WIDTH: 650px; PADDING-TOP: 0em
+}
+#content H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.6em; MARGIN: 0em 1em 0.25em 0em; LINE-HEIGHT: 1.35em; PADDING-TOP: 0.75em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif;
+}
+#content H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.5em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0.75em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif;
+}
+#content H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0.75em;
+}
+#navbar A {
+	FONT-WEIGHT: 700; FONT-SIZE: 0.65em; LETTER-SPACING: 0.05em;
+}
+#navbar A:link {
+	COLOR: #ff6600;
+}
+#navbar A:active {
+	COLOR: #ff6600;
+}
+#navbar A:visited {
+	COLOR: #ff6600;
+}
+#navbar A:hover {
+	BACKGROUND: #ff6600; COLOR: #B71F1D; 
+	TEXT-DECORATION: none;
+}
+#developedBy {
+	FONT-SIZE: 0.95em; 
+	TEXT-TRANSFORM: uppercase;
+}
+/* #sidebar DIV.block {
+	FONT-SIZE: 1em; PADDING-BOTTOM: 1.5em; COLOR: #000000
+}
+#sidebar DIV.block SPAN.blockTitle {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 1em; PADDING-BOTTOM: 0.5em; TEXT-TRANSFORM: uppercase; COLOR: #000000; PADDING-TOP: 0.5em; LETTER-SPACING: 0.1em
+}
+#sidebar DIV.block SPAN.blockSubtitle {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: #000000; PADDING-TOP: 0px
+}
+#sidebar INPUT.textField {
+	FONT-SIZE: 1em
+}
+#sidebar SELECT.selectMenu {
+	FONT-SIZE: 1em
+}
+#sidebar INPUT.button {
+	FONT-SIZE: 1em
+}
+#sidebar A {
+	
+}
+#sidebar A:link {
+	COLOR: #333333
+}
+#sidebar A:active {
+	COLOR: #333333
+}
+#sidebar A:visited {
+	COLOR: #333333
+}
+#sidebar A:hover {
+	BACKGROUND: #333333; COLOR: #eaeaea; TEXT-DECORATION: none
+} */
+
+#breadcrumb A {
+	TEXT-DECORATION: none;
+}
+#breadcrumb A.current {
+	FONT-WEIGHT: bold;
+}
+#footer DIV.debugStats {
+	FONT-SIZE: 0.6em;
+}
+SPAN.disabled {
+	COLOR: #666;
+}
+LABEL.disabled {
+	COLOR: #666;
+}
+A.action {
+	FONT-SIZE: 0.85em; TEXT-TRANSFORM: uppercase;
+}
+A.file {
+	FONT-SIZE: 0.85em; TEXT-TRANSFORM: uppercase;
+}
+A.icon {
+	TEXT-DECORATION: none;
+}
+A.icon:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+}
+SPAN.formRequired {
+	FONT-SIZE: 0.9em; COLOR: #333;
+}
+SPAN.instruct {
+	
+}
+SPAN.heading {
+	FONT-SIZE: 0.85em; TEXT-TRANSFORM: uppercase;
+}
+SPAN.highlight {
+	BORDER-BOTTOM: #8b7860 1px solid;
+}
+.nowrap {
+	WHITE-SPACE: nowrap;
+}
+TABLE.info {
+	
+}
+TABLE.info TD {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0px;
+}
+TABLE.listing {
+	
+	
+}
+TABLE.listing TD {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.25em; PADDING-TOP: 0.25em;
+}
+TABLE.listing TR.heading TD {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: normal; FONT-SIZE: 0.85em; PADDING-BOTTOM: 1em; TEXT-TRANSFORM: uppercase; LINE-HEIGHT: 120%; PADDING-TOP: 0.75em;
+}
+TABLE.listing TD.heading {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: normal; FONT-SIZE: 0.85em; PADDING-BOTTOM: 1em; TEXT-TRANSFORM: uppercase; LINE-HEIGHT: 120%; PADDING-TOP: 0.75em;
+}
+TABLE.info TD.heading {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: normal; FONT-SIZE: 0.85em; PADDING-BOTTOM: 1em; TEXT-TRANSFORM: uppercase; LINE-HEIGHT: 120%; PADDING-TOP: 0.75em;
+}
+TABLE.info TD.heading {
+	PADDING-LEFT: 0px;
+}
+TABLE.listing TD.nodata {
+	FONT-STYLE: italic; TEXT-ALIGN: center;
+}
+TABLE.info TD.nodata {
+	FONT-STYLE: italic; TEXT-ALIGN: center;
+}
+TABLE.listing TD.headseparator {
+	BORDER-TOP: #8b7860 1px solid; FONT-SIZE: 0.1em; LINE-HEIGHT: 1%;
+}
+TABLE.listing TD.endseparator {
+	BORDER-TOP: #8b7860 1px solid; FONT-SIZE: 0.25em; LINE-HEIGHT: 10%;
+}
+TABLE.listing TD.separator {
+	BORDER-TOP: #8b7860 1px solid; FONT-SIZE: 0.1em; LINE-HEIGHT: 1%;
+}
+TABLE.info TD.separator {
+	BORDER-TOP: #8b7860 1px solid; FONT-SIZE: 0.1em; LINE-HEIGHT: 1%;
+}
+TABLE.data {
+	
+}
+TABLE.data TR {
+	
+}
+TABLE.data TD {
+	PADDING-BOTTOM: 0.25em;
+}
+TABLE.data TD.label {
+	PADDING-RIGHT: 1em;
+}
+TABLE.data TD.value {
+	
+}
+TABLE.data TD.separator {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-SIZE: 0.1em; PADDING-BOTTOM: 0.5em; LINE-HEIGHT: 1%; PADDING-TOP: 0.5em;
+}
+TABLE.data TD.heading {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px;
+}
+TABLE.nested TR {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px;
+}
+SPAN.nested {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 0px; FONT-SIZE: 1.2em; PADDING-BOTTOM: 0px; PADDING-TOP: 0px;
+}
+SPAN.formError {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; COLOR: #900;
+}
+UL.formErrorList {
+	COLOR: #900;
+}
+UL.menu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px;
+}
+UL.menu LI {
+	PADDING-RIGHT: 1.5em; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px;
+}
+UL.menu LI.current {
+	FONT-WEIGHT: bold;
+}
+UL.menu A {
+	FONT-SIZE: 0.85em; TEXT-TRANSFORM: uppercase; TEXT-DECORATION: none;
+}
+UL.steplist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: decimal;
+}
+UL.steplist LI {
+	PADDING-RIGHT: 0.5em; DISPLAY: inline; PADDING-LEFT: 0px; FONT-SIZE: 0.85em; PADDING-BOTTOM: 0px; MARGIN: 0px; TEXT-TRANSFORM: uppercase; PADDING-TOP: 0px;
+}
+UL.steplist LI.current {
+	FONT-WEIGHT: bold;
+}
+UL.steplist A {
+	TEXT-DECORATION: none;
+}
+UL.plain {
+	PADDING-LEFT: 1.5em; LIST-STYLE-TYPE: none;
+}
+DIV.separator {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.5em; PADDING-BOTTOM: 0px; MARGIN: 1em 0em 0.25em; WIDTH: 595px; LINE-HEIGHT: 25%; PADDING-TOP: 0px; BORDER-BOTTOM: #8b7860 1px solid;
+}
+
+TABLE.editorial {
+	margin-left: 15px;
+	background-color: #F2F7F7;
+
+}
+
+#announcementsHome {
+	width: 65%;
+	margin: 2em 0 2em 0;	
+}

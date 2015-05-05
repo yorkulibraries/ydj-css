@@ -14,13 +14,15 @@
     display:none;
 }
 
-#aboutSubmissions {
+#about {
     display:none;
 }
 
-#onlineSubmissions {
+#login {
     display:none;
 }
+
+#current {display:none;}
 
 /**
  * Common HTML elements c1c2c3
@@ -29,6 +31,12 @@
 #main {
     width: 60%;
     padding-top:0;
+    margin-left:20%;
+}
+
+#rightSidebar {
+    margin-right: 5%;
+    margin-left: 0%;
 }
 
 #container {

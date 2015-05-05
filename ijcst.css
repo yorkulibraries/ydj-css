@@ -1,3 +1,5 @@
+#aboutPolicies li:nth-child(2) {display:none}
+
 BODY {
 	padding:0px;
 	BACKGROUND-IMAGE: url('none');

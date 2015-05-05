@@ -11,15 +11,8 @@
  
  /*hidden elements*/
 
-#aboutSubmissions {display:none;}
-
-#editorialTeam {display:none;}
-
-#gender {display:none;}
-
-#registerAsReader {display:none;}
-
-#registerAsAuthor {display:none;}
+#about {display:none;}
+#register {display:none;}
 
 /**
  * Common HTML elements
