@@ -8,6 +8,22 @@
  *
  * $Id: common.css,v 1.71.2.1 2009/04/08 19:43:30 asmecher Exp $
  */
+/* hidden elements */
+
+#navbar ul.menu li:nth-child(2) {display:none;}
+#navbar ul.menu li:nth-child(4) {display:none;}
+#navbar ul.menu li:nth-child(6) {display:none;}
+
+#about {
+    display:none;
+    }
+
+#login {display:none;}
+#register {display:none;}
+    
+#current {
+    display:none;
+    }
 
 /**
  * Common HTML elements

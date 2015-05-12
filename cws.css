@@ -1,5 +1,5 @@
 /**
- * refugenew.css
+ * cws.css
  *
  * Copyright (c) 2003-2006 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -11,7 +11,7 @@
  
  /* These are to hide page elements */
  
-#registerAsReader {
+#register {
     display:none;
 }
 

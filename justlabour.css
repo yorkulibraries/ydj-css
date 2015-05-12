@@ -32,6 +32,7 @@
     width: 60%;
     padding-top:0;
     margin-left:20%;
+    background:#fff;
 }
 
 #rightSidebar {
@@ -45,6 +46,7 @@
 
 #content {
     border-top:none;
+    background:#fff;
 }
 
 #header {
@@ -58,7 +60,11 @@
     padding: 0;
 }
 
-#body {
+body {
+    background:#fff;
+}
+
+#sidebar {
     background:#fff;
 }
 

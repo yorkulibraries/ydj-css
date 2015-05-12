@@ -1,21 +1,5 @@
-/**
- * common.css
- *
- * Copyright (c) 2003-2006 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
- *
- * Site-wide shared stylesheet.
- *
- * $Id: common.css,v 1.39 2006/07/01 17:36:16 alec Exp $
- */
-
-/**
- * Common HTML elements
- */
-
-
 BODY {
-	padding:0px; MARGIN: 0px; COLOR: #111; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; BACKGROUND: #ecf8fc url('background.png') repeat-y center; 
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(background.jpg); background-repeat: repeat-x; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #111; PADDING-TOP: 0px; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #ffffff
 }
 DIV {
 	LINE-HEIGHT: 140%; TEXT-ALIGN: left
@@ -30,17 +14,16 @@ A {
 	TEXT-DECORATION: underline
 }
 A:link {
-	COLOR: #CC1D00
+	COLOR: #8D111F
 }
 A:active {
-	COLOR: #CC1D00
+	COLOR: #8D111F
 }
 A:visited {
-	COLOR: #CC1D00
-
+	COLOR: #8D111F
 }
 A:hover {
-	BACKGROUND: #CC1D00; COLOR: #FFFFFF; TEXT-DECORATION: none
+	BACKGROUND: #8D111F; COLOR: #ffffff; TEXT-DECORATION: underline
 }
 A.plain {
 	TEXT-DECORATION: none
@@ -70,97 +53,100 @@ INPUT.uploadField {
 	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #f0f0e8
 }
 INPUT.button {
-	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-SIZE: 1em; BACKGROUND-COLOR: #f0f0e8; COLOR: #333333;
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-SIZE: 1em; BACKGROUND-COLOR: #e8e8e1
 }
 INPUT.defaultButton {
-	FONT-WEIGHT: bold; COLOR: #333333; BACKGROUND-COLOR: #f0f0e8
+	FONT-WEIGHT: bold; COLOR: #fbfbf3; BACKGROUND-COLOR: #375
 }
-
 #container {
-	PADDING-BOTTOM: 0.3em; LINE-HEIGHT: 125%; TEXT-ALIGN: center; 
+	PADDING-BOTTOM: 0.3em; LINE-HEIGHT: 125%; TEXT-ALIGN: center; BACKGROUND-IMAGE: url(header.jpg); background-position:top; background-repeat:no-repeat;
 }
 #header {
-	MARGIN: 0px auto; WIDTH: 899px; BACKGROUND-COLOR: transparent
+	MARGIN: 0px auto; WIDTH: 768px; BACKGROUND-COLOR: transparent
 }
 #headerTitle {
-	WIDTH: 900px; HEIGHT: 129px; BACKGROUND-COLOR: #CC1D00; TEXT-ALIGN: left
+	 WIDTH: 768px; MARGIN-RIGHT: 0px; HEIGHT: 175px; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
 }
 #header H1 {
 	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; COLOR: transparent; PADDING-TOP: 0px; FONT-FAMILY: Georgia,'Times New Roman',Times,serif
 }
 #body {
-	MARGIN: 0px auto; WIDTH: 899px;
+	MARGIN: 0px auto; WIDTH: 768px;
 }
 #bottom{
-	background-image: url('footer.jpg'); WIDTH: 901px; HEIGHT: 116px;
+	background-image: url(foot.jpg); WIDTH: 768px; HEIGHT: 63px;
 }
 
 #footer {
 	CLEAR: both; MIN-HEIGHT: 50px; WIDTH: 100%; POSITION: relative; TEXT-ALIGN: center; 
 }
 #footerContent {
-	MARGIN: 0px auto; WIDTH: 901px;
+	MARGIN: 0px auto; WIDTH: 768px; FONT-SIZE: 0.7em; BACKGROUND-COLOR: #ffffff;
 }
 
 #rightSidebar {
 	float: right;
-	width: 14%;
-	padding: 1em 0em 1em 0em;
+	width: 16%;
+	padding: 3.5em 0em 1em 0em;
 	font-size: 0.65em;
 	height: 100%;
-	margin-right: 4%;
+	margin-right: 2%;
 	margin-left: 2%;
+	overflow: hidden;
+}
+
+#main {
+	BACKGROUND-COLOR: transparent; 
+	margin: 0 auto;
+	float: none;
+	width: 75%;
+	display: inline;
 	overflow: visible;
 }
 
-
-
-#main {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; WIDTH: 899px; PADDING-TOP: 0em; BACKGROUND-COLOR: #ffffff; margin: 0 auto;
-}
 #main H2 {
-	FONT-WEIGHT: normal; FONT-SIZE: 1.3em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0.5em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif; BACKGROUND-COLOR: #ffffff
+	FONT-WEIGHT: normal; FONT-SIZE: 1.3em; MARGIN: 0em 1em 0.5em 0.9em; PADDING-TOP: 0.5em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif; BACKGROUND-COLOR: #ffffff
 }
 #main H3 {
-	FONT-WEIGHT: normal; FONT-SIZE: 1.1em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif; BACKGROUND-COLOR: #ffffff
+	FONT-WEIGHT: normal; FONT-SIZE: 1.1em; MARGIN: 0em 1em 0.5em 0.9em; PADDING-TOP: 0em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif; BACKGROUND-COLOR: #ffffff
 }
 #navbar {
-	PADDING-LEFT: 0.5em; PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-BOTTOM:#CC1D00 1px dotted; BACKGROUND-COLOR: #ffffff;
+	PADDING-LEFT: 1.2em; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #c12000 0px dotted; BACKGROUND-COLOR: #141414
 }
 #breadcrumb {
-	PADDING-LEFT: 1em; FONT-SIZE: 0.7em; PADDING-TOP: 1em
+	PADDING-LEFT: 1.7em; FONT-SIZE: 0.7em; PADDING-TOP: 1em
 }
 #content {
-	PADDING-RIGHT: 0.5em; BORDER-TOP: #c12000 0px solid; PADDING-LEFT: 0.5em; FONT-SIZE: 0.7em; PADDING-BOTTOM: 3em; MARGIN: 0em 0em 0em 0.5em; WIDTH: 675px; PADDING-TOP: 0em
+	PADDING-RIGHT: 0.5em; BORDER-TOP: #c12000 0px solid; PADDING-LEFT: 1.2em; FONT-SIZE: 0.7em; PADDING-BOTTOM: 3em; MARGIN: 0em 0em 0em 0.5em; WIDTH: 550px; PADDING-TOP: 0em
 }
 #content H3 {
-	FONT-WEIGHT: normal; FONT-SIZE: 1.6em; MARGIN: 0em 1em 0.25em 0em; LINE-HEIGHT: 1.35em; PADDING-TOP: 0.75em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif
+	FONT-WEIGHT: normal; FONT-SIZE: 1.6em; MARGIN: 0em 0em 0em 0em; LINE-HEIGHT: 1.35em; PADDING-TOP: 0.75em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif
 }
 #content H4 {
-	FONT-WEIGHT: normal; FONT-SIZE: 1.5em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif
+	FONT-WEIGHT: normal; FONT-SIZE: 1.5em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0.75em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif
 }
 #content H5 {
 	FONT-WEIGHT: bold; FONT-SIZE: 1em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0.75em
 }
 #navbar A {
-	FONT-WEIGHT: 400; FONT-SIZE: 0.65em; LETTER-SPACING: 0.05em
+	FONT-WEIGHT: 700; FONT-SIZE: 0.65em; LETTER-SPACING: 0.05em
 }
 #navbar A:link {
-	COLOR: #CC1D00
+	COLOR: #ffffff;
 }
 #navbar A:active {
-	COLOR: #CC1D00
+	COLOR: #ffffff
 }
 #navbar A:visited {
-	COLOR: #CC1D00
+	COLOR: #ffffff
 }
 #navbar A:hover {
-	BACKGROUND: #CC1D00; COLOR: #FFFFFF; TEXT-DECORATION: none
+	BACKGROUND: #ffffff; COLOR: #8D111F; TEXT-DECORATION: none; padding-top:1em; padding-bottom:1em;
 }
 #developedBy {
 	FONT-SIZE: 0.95em; TEXT-TRANSFORM: uppercase
 }
-/* #sidebar DIV.block {
+#sidebar DIV.block {
 	FONT-SIZE: 1em; PADDING-BOTTOM: 1.5em; COLOR: #000000
 }
 #sidebar DIV.block SPAN.blockTitle {
@@ -191,9 +177,8 @@ INPUT.defaultButton {
 	COLOR: #333333
 }
 #sidebar A:hover {
-	BACKGROUND: #333333; COLOR: #eaeaea; TEXT-DECORATION: none
-} */
-
+	BACKGROUND: #8D111f; COLOR: #ffffff; TEXT-DECORATION: none
+}
 #breadcrumb A {
 	TEXT-DECORATION: none
 }
@@ -243,7 +228,6 @@ TABLE.info TD {
 	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0px
 }
 TABLE.listing {
-	
 	
 }
 TABLE.listing TD {
@@ -316,7 +300,7 @@ UL.menu {
 	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
 }
 UL.menu LI {
-	PADDING-RIGHT: 1em; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+	PADDING-RIGHT: 1.5em; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
 }
 UL.menu LI.current {
 	FONT-WEIGHT: bold
@@ -340,35 +324,5 @@ UL.plain {
 	PADDING-LEFT: 1.5em; LIST-STYLE-TYPE: none
 }
 DIV.separator {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.5em; MARGIN: 1em 0em; padding: 1em 0em; WIDTH: 595px; LINE-HEIGHT: 25%; PADDING-TOP: 0px; BORDER-BOTTOM: #8b7860 1px solid
-}
-
-
-
-
-TABLE.editorial {
-	margin-left: 15px;
-	background-color: #C9EBF3;
-
-}
-
-table.tocArticle td.tocGalleys {
-text-align: right;
-}
-
-/*#announcementsHome {
-	width: 65%;
-	margin: 2em 0 2em 0;	
-*/
-#announcementsHome {
-	width: 65%;
-	margin: 0;	
-}
-
-#announcementsHome table.announcements td.headseparator {
-border-top:0px;
-}
-
-table.announcements td.description {
-width:100%;
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.5em; PADDING-BOTTOM: 0px; MARGIN: 1em 0em 0.25em; WIDTH: 550px; LINE-HEIGHT: 25%; PADDING-TOP: 0px; BORDER-BOTTOM: #8b7860 1px solid
 }
