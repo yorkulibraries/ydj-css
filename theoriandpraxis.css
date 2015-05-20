@@ -1,425 +1,348 @@
-/*
- * Common HTML elements
- * Stylesheet edited by Marcia Johnson for TOPIA
- */
-/* headers */
+html {height:100%;}
 
-h1 {
-	font: bold 2.8em/1.1em Helvetica, Verdana, sans-serif; 
-	color: #87AE00; 
-}
-
-h2 {
-	font: bold 2.2em/1.1em Helvetica, Verdana, sans-serif; 
-	color: #87AE00; 
-}
-
-h3 {
-	font: bold 1.8em/1.2em Helvetica, Verdana, sans-serif; 
-	color: #87AE00; 
-}
-
-h4 {
-	font: bold 1.5em/1.1em Helvetica, Verdana, sans-serif; 
-	color: #90BA00; 
-}
-
-h5 {
-	font: normal 1.3em/1.1em Helvetica, Verdana, sans-serif; 
-	color: #000; 
-}
-
-/* Existing Styles */
-body {
-	margin: 0;
-	padding: 10px;
-	background-color: #3E4447;
-	color: #FFFFFF;
-	font-family: Helvetica, Verdana, sans-serif;
-	text-align: center;
-	min-height:100%;
-	width:1024px;
-}
-
-html {
+BODY {
 	height:100%;
+	padding:0px; 
+	BACKGROUND-IMAGE: url('background.jpg'); 
+	BACKGROUND-REPEAT: repeat-y; 
+	BACKGROUND-POSITION: center;  
+	MARGIN: 0px; COLOR: #111; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #ffffff;
 }
-
-
-/* Links */
-
-a {
-	text-decoration: none;
+DIV {
+	LINE-HEIGHT: 140%; TEXT-ALIGN: left;
+}
+TABLE {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 1em; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; border-spacing: 0;
+}
+FORM {
+	MARGIN: 0px;
+}
+A {
+	TEXT-DECORATION: underline;
 }
 
 a:link {
-	color: #FFFFFF; 
+	color: #936e2a;
 }
 
 a:active {
-	color: #87AE00;
+	color: #936e2a;
 }
-	
+
 a:visited {
-	color: #77C99E;
+	color: #936e2a;
 }
 
 a:hover {
-	color: #87AE00;
-	background: none;
+	color: #936e2a;
+	background-color: #fff;
 }
 
-input.textField, select.selectMenu, textarea.textArea, input.uploadField {
-	background-color: #BFBFBF;
-	/*AK changed colour from #FFFFFF*/
-	color: #3b3a3a;
-	font-family: Helvetica,Verdana,sans-serif;
-	border-top: none;
-	border-left: none;
-	border-bottom: none;
-	border-right: none;
-	font-size: 0.8em;
+A.plain {
+	TEXT-DECORATION: none;
 }
-
-input.button {
-	/*padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	padding-left: 0.5em;
-	padding-right: 0.5em; */
-	background-color: #87AE00;
-	font-size: 0.75em;
-	font-weight: bold;
-	color: #FFFFFF;
-	border: 1px solid #87AE00;
-	text-transform: uppercase;
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2.5em; PADDING-BOTTOM: 0px; MARGIN: 0.25em 0px 0.75em; PADDING-TOP: 0px;
 }
-
-
-/**
- * Main layout elements
- */
-
+TT {
+	FONT-SIZE: 1.25em;
+}
+LABEL {
+	
+}
+LABEL.error {
+	COLOR: #900;
+}
+INPUT.textField {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8;
+}
+SELECT.selectMenu {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8;
+}
+TEXTAREA.textArea {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8;
+}
+INPUT.uploadField {
+	BORDER-TOP: #666 2px solid; FONT-SIZE: 1em; BORDER-LEFT: #666 2px solid; COLOR: #000; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: #f0f0e8;
+}
+INPUT.button {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-SIZE: 1em; BACKGROUND-COLOR: #999999;
+}
+INPUT.defaultButton {
+	FONT-WEIGHT: bold; COLOR: #fbfbf3; BACKGROUND-COLOR: #999999;
+}
 #container {
-	background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/84/container.jpg');
-	background-repeat: repeat-y;
-	width:100% !important;
-	min-width: 730px !important;
-   /*min-height: 1000px*/
-  height:auto !important;
-  height: 100% !important; /* used to be 1000px */
-	margin: 0px auto;
-	line-height: 125%;
-	text-align: center;
-	overflow: auto
+	min-height:100%;position:relative;PADDING-BOTTOM: 0.3em; PADDING-LEFT: 0px; LINE-HEIGHT: 125%; TEXT-ALIGN: center; BACKGROUND-IMAGE: url('Banner04.png'); background-repeat: no-repeat; background-position: top;
 }
-
 #header {
-	width:100%;
-	background-color: #3E4447; 
-	background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/84/container.jpg');
-	background-repeat: no-repeat;
-	text-align: left
+	MARGIN: 0px auto; WIDTH: 797px; BACKGROUND-COLOR: transparent;
 }
-
 #headerTitle {
-	background-color: #1c1c1c; 
-	background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/84/theader2.jpg');
-	/* AK - change back to theader.jpg when ready to implement header block (when sidebar plugin is ready) */
-	background-repeat: no-repeat;
-	text-align:left;
-	width:100%
+	MARGIN: 0px auto; WIDTH: 797px; HEIGHT: 130px; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left;
+}
+#header H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 1.9em; PADDING-BOTTOM: 0px; MARGIN: 0px auto; COLOR: transparent; PADDING-TOP: 0px; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; FONT-SIZE: 0; DISPLAY: none;
+}
+#body {
+	MARGIN: 0px auto; WIDTH: 814px;padding-bottom:15px;
+}
+#pageFooter {
+	background:#0B273F;
+	color:#fff;
+	padding-left:20px;
+	padding-bottom:2em;
+	padding-top:2em;
+	margin-left:-25px;
+	font-size:x-small;
+	clear:both;
+	width:793px;
+	position:absolute;
+	bottom:0;
+	text-align:center;
 }
 
-#headerTitle h1 {
-	visibility: hidden;
-	padding-bottom: 0px;
-	padding-top: 18px; 
-	/*line-height: 100%; Added based on Marcia's suggestion*/
+#footerContent {
+	MARGIN: 0px auto; WIDTH: 797px;
 }
-
-#headerNav_search {
-	float: right;
-	display: block;
-	text: 75%;
-	padding-top: 35px; 
-	padding-right: 2%;
-}
-	
-#home_sitemap {
-	font-family: Helvetica, Verdana, sans-serif; 
-	float:right;
-	display:block; 
-	text-transform: uppercase; 
-	font-weight: bold;
-	font-size:70%; 
-	padding-right: 15px; 
-	padding-top: 5px;
-	margin-right: -24%;
-}
-
-#main { 
- 	height:100%;
- 	margin-left: 2%;
-	width:775px;
-}
-
-#main h2 {
-	margin: 0em 1em 0.5em 0em;
-	padding-top: 0.5em;
-	font-family: Helvetica, Verdana, sans-serif;
-	font-weight: normal;
-	line-height: 130%;
-}
-
-#navbar {
-	width: 150px;
-	float: left;
-	display: block;
-	margin-top: 10px;
-	margin-right: 40px;
-	margin-left: 10px;
-	padding-bottom: 0.5em;
-	border-bottom: none;
-	font-family: Helvetica, Verdana, sans-serif;
-}
-
-#breadcrumb {
-	padding-top: 1em;
-	font-size: 0.8em;
-}
-
-#content {
- margin-left: 200px;
- padding-left: 10px;
-	/* padding: 0; */
-	padding-top: 0.5em;
-	font-size: 0.8em;
-	border-top: none;
-}
-
- 
-/**
- * Navigation bar
- */
-
-#navbar ul.menu {
-	width:150px; 
-	padding:0; 
-	margin:0; 
-	text-transform:uppercase; 
-	list-style: none; 
-}
-	
-#navbar ul.menu li { 
-	font: bold 1.4em/1em helvetica, verdana, sans-serif;   
-	margin: 0; 
-	width: 150px;
-	display: block;  
-}
-
-#navbar ul.menu li li { 
-	font: bold 1.4em/1em helvetica, verdana, sans-serif;   
-	margin: 10px; 
-	width: 150px;
-	display: block;  
-}
-
-#navbar ul.menu li a {
-	color: #fff; 
-	background-color:none; 
-	width: 110px; 
-	height: 30px; 
-	padding:10px 0 0 10px; 
-	display:block; 
-	letter-spacing: -.5px; 
-}
-
-#navbar ul.menu li li a {
-	color: #fff; 
-	background-color:none; 
-	width: 110px; 
-	height: 30px; 
-	padding:10px 0 0 17px; 
-	display:block; 
-	letter-spacing: -.5px; 
-}
-		
-#navbar ul.menu li.first a {
-	background: none; 
-	height:32px;
-}
-
-#navbar ul.menu li li.first a {
-	background: none; 
-	height:32px;
-}
-
-#navbar ul.menu li.middle a {
-	background: none;
-}
-
-#navbar ul.menu li li.middle a {
-	background: none;
-}
-		
-#navbar ul.menu li.last a {
-	background:none; 
-	height:32px; 
-}
-	
-#navbar ul.menu li li.last a {
-	background:none; 
-	height:32px; 
-}
-		
-#navbar ul.menu li.first a:hover {
-	background: #BCE4C9;
-}
-
-#navbar ul.menu li li.first a:hover {
-	background: #BCE4C9;
-}
-			
-#navbar ul.menu li.middle a:hover {
-	background:#BCE4C9; 
-}
-
-#navbar ul.menu li li.middle a:hover {
-	background:#BCE4C9; 
-}
-			
-#navbar ul.menu li.last a:hover {
-	background: #BCE4C9;
-}
-
-#navbar ul.menu li li.last a:hover {
-	background: #BCE4C9;
-}
-		
-#navbar ul.menu li a:active {
-	color: #87AE00; 
-	background-color:none; 
-	text-decoration:none; 
-}
-
-#navbar ul.menu li a:hover {
-	color: #77C99E; 
-	background-color:none; 
-	text-decoration:none; 
-}
-
-#navbar ul.menu li a:visited {
-	color: #87AE00; 
-	background-color:none; 
-	text-decoration:none; 
-}
-
-/**
- * Announcements
- */
- 
- table.announcements td.headseparator {
-	border-top: 1px solid #FFF;
-	font-size: 0.1em;
-	line-height: 1%;
-}
-
-table.announcements td.headseparator {
-	border-top: 1px solid #FFF;
-	font-size: 0.1em;
-	line-height: 1%;
-}
-
-table.announcements td.endseparator {
-	border-top: 1px solid #FFF;
-	font-size: 0.25em;
-	line-height: 10%;
-}
-
-table.announcements td.separator {
-	border-top: 1px solid #DDDDD0;
-	font-size: 0.1em;
-	line-height: 1%;
-}
-
-/**
- * Additional text styles
- */
-
-span.disabled, label.disabled {
-	color: #577;
-}
-
-/**
- * Table styles
- */
- 
-/*AK added this entire element*/ 
-
-
-table.listing td {
-    font-size:11px;
-	padding: 0.25em;
-}
-
-table.listing tr.highlight {
-	background: #376850;
-}
-
-table.listing td.headseparator {
-	border-top: 1px solid #BFBFBF;
-	font-size: 0.1em;
-	line-height: 1%;
-}
-
-table.listing td.endseparator {
-	border-top: 1px solid #BFBFBF;
-	font-size: 0.25em;
-	line-height: 10%;
-}
-
-table.listing td.separator, table.info td.separator {
-	border-top: 1px solid #BFBFBF;
-	font-size: 0.1em;
-	line-height: 1%;
-}
-
-/**
- * Other organizational elements
- */
- 
-div.separator {
-	width: 100%;
-	margin-top: 1em;
-	margin-bottom: 0.25em;
-	padding: 0;
-	border-bottom: 1px solid #BFBFBF;
-	font-size: 0.5em;
-	line-height: 25%;
-}  
-
-#sidebar div.block {
-	font-size: 1em;
-	padding-bottom: 1.5em;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-span.formRequired {
-	color: #FFFFFF;
-	font-size: 0.9em;
-}
-
 #rightSidebar {
 	float: right;
-	width: 14%;
+	width: 16%;
 	padding: 1em 0em 1em 0em;
-	font-size: 0.75em;
+	font-size: 0.65em;
 	height: 100%;
-	margin-right: 2%;
+	margin-right: 4%;
 	margin-left: 2%;
+	margin-top:7%;
+	overflow: visible;
+}
+#main {
+	PADDING-RIGHT: 0em; 
+	PADDING-LEFT: 0em; 
+	PADDING-BOTTOM: 0em; 
+	PADDING-TOP: 0em; 
+	BACKGROUND-COLOR: transparent; 
+	margin: 0 auto;
+	float: none;
+	width: 75%;
+	display: inline;
+	overflow: visible;
+}
+#main H2 {
+	display:none;
+}
+#main H3 {
+	PADDING-LEFT: 10px; FONT-WEIGHT: normal; FONT-SIZE: 1.1em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0em; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; BACKGROUND-COLOR: transparent;
+}
+#navbar {
+	WIDTH: 793px; PADDING-LEFT: 20px; PADDING-BOTTOM: 5px; PADDING-TOP: 0px; MARGIN: 0px 0px 0px 0.5px; background:#11334d;
+	border-bottom:0px solid #0B273F;
+}
+#breadcrumb {
+	width:575px;
+       margin-LEFT: 20px; FONT-SIZE: 0.7em; PADDING-TOP: 1em; padding-bottom:1em;
+        border-bottom:1px solid #8f9194;
+        color:#8f9194;
 }
 
-#issue {
-	padding-top: 10px;
+#breadcrumb a {
+    color:#8f9194;
 }
+
+#breadcrumb p {
+color:#8f9194;
+}
+#content {
+	PADDING-RIGHT: 0.5em; BORDER-TOP: #c12000 0px solid; PADDING-LEFT: 20px; FONT-SIZE: 0.7em; PADDING-BOTTOM: 3em; MARGIN: 0em 0em 0em 0.5em; WIDTH: 595px; PADDING-TOP: 0em;
+}
+#content H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.6em; MARGIN: 0em 1em 0.25em 0em; LINE-HEIGHT: 1.35em; PADDING-TOP: 0.75em; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+}
+#content H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.5em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0.75em; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+}
+#content H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; MARGIN: 0em 1em 0.25em 0em; PADDING-TOP: 0.75em;
+}
+#navbar a {
+        font-weight:bold;
+	color:#95b9db;
+	background-color:#11334d;
+	text-decoration:none;
+	font-size: 0.75em;
+	letter-spacing: 0.06em;
+}	
+
+#navbar a:hover {
+	color:#95b9db;
+	background-color:#11334d;
+	font-size: 0.75em;
+	letter-spacing: 0.06em;
+	}
+
+ul.menu li {padding:0 0.5em 0 0;}
+
+#developedBy {
+	FONT-SIZE: 0.95em; TEXT-TRANSFORM: uppercase;
+}
+#sidebar DIV.block {
+	FONT-SIZE: 1em; PADDING-BOTTOM: 1.5em; COLOR: #000000;
+}
+#sidebar DIV.block SPAN.blockTitle {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 1em; PADDING-BOTTOM: 0.5em; TEXT-TRANSFORM: uppercase; COLOR: #000000; PADDING-TOP: 0.5em; LETTER-SPACING: 0.1em;
+}
+#sidebar DIV.block SPAN.blockSubtitle {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: #000000; PADDING-TOP: 0px;
+}
+#sidebar INPUT.textField {
+	FONT-SIZE: 1em;
+}
+#sidebar SELECT.selectMenu {
+	FONT-SIZE: 1em;
+}
+#sidebar INPUT.button {
+	FONT-SIZE: 1em;
+}
+
+#footer DIV.debugStats {
+	FONT-SIZE: 0.6em;
+}
+SPAN.disabled {
+	COLOR: #666;
+}
+LABEL.disabled {
+	COLOR: #666;
+}
+A.action {
+	FONT-SIZE: 0.85em; TEXT-TRANSFORM: uppercase;
+}
+A.file {
+	FONT-SIZE: 0.85em; TEXT-TRANSFORM: uppercase;
+}
+A.icon {
+	TEXT-DECORATION: none;
+}
+A.icon:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+}
+SPAN.formRequired {
+	FONT-SIZE: 0.9em; COLOR: #333;
+}
+SPAN.instruct {
+	
+}
+SPAN.heading {
+	FONT-SIZE: 0.85em; TEXT-TRANSFORM: uppercase;
+}
+SPAN.highlight {
+	BORDER-BOTTOM: #8b7860 1px solid;
+}
+.nowrap {
+	WHITE-SPACE: nowrap;
+}
+TABLE.info {
+	
+}
+TABLE.info TD {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0px;
+}
+TABLE.listing {
+	
+}
+TABLE.listing TD {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.25em; PADDING-TOP: 0.25em;
+}
+TABLE.listing TR.heading TD {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: normal; FONT-SIZE: 0.85em; PADDING-BOTTOM: 1em; TEXT-TRANSFORM: uppercase; LINE-HEIGHT: 120%; PADDING-TOP: 0.75em;
+}
+TABLE.listing TD.heading {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: normal; FONT-SIZE: 0.85em; PADDING-BOTTOM: 1em; TEXT-TRANSFORM: uppercase; LINE-HEIGHT: 120%; PADDING-TOP: 0.75em;
+}
+TABLE.info TD.heading {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: normal; FONT-SIZE: 0.85em; PADDING-BOTTOM: 1em; TEXT-TRANSFORM: uppercase; LINE-HEIGHT: 120%; PADDING-TOP: 0.75em;
+}
+TABLE.info TD.heading {
+	PADDING-LEFT: 0px;
+}
+TABLE.listing TD.nodata {
+	FONT-STYLE: italic; TEXT-ALIGN: center;
+}
+TABLE.info TD.nodata {
+	FONT-STYLE: italic; TEXT-ALIGN: center;
+}
+TABLE.listing TD.headseparator {
+	BORDER-TOP: #8b7860 1px solid; FONT-SIZE: 0.1em; LINE-HEIGHT: 1%;
+}
+TABLE.listing TD.endseparator {
+	BORDER-TOP: #8b7860 1px solid; FONT-SIZE: 0.25em; LINE-HEIGHT: 10%;
+}
+TABLE.listing TD.separator {
+	BORDER-TOP: #8b7860 1px solid; FONT-SIZE: 0.1em; LINE-HEIGHT: 1%;
+}
+TABLE.info TD.separator {
+	BORDER-TOP: #8b7860 1px solid; FONT-SIZE: 0.1em; LINE-HEIGHT: 1%;
+}
+TABLE.data {
+	
+}
+TABLE.data TR {
+	
+}
+TABLE.data TD {
+	PADDING-BOTTOM: 0.25em;
+}
+TABLE.data TD.label {
+	PADDING-RIGHT: 1em;
+}
+TABLE.data TD.value {
+	
+}
+TABLE.data TD.separator {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-SIZE: 0.1em; PADDING-BOTTOM: 0.5em; LINE-HEIGHT: 1%; PADDING-TOP: 0.5em;
+}
+TABLE.data TD.heading {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px;
+}
+TABLE.nested TR {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px;
+}
+SPAN.nested {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 0px; FONT-SIZE: 1.2em; PADDING-BOTTOM: 0px; PADDING-TOP: 0px;
+}
+SPAN.formError {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; COLOR: #900;
+}
+UL.formErrorList {
+	COLOR: #900;
+}
+UL.menu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px;
+}
+UL.menu LI {
+	PADDING-RIGHT: 0.5em; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px;
+}
+UL.menu LI.current {
+	FONT-WEIGHT: bold;
+}
+UL.menu A {
+	FONT-SIZE: 0.85em; TEXT-TRANSFORM: uppercase; TEXT-DECORATION: none;
+}
+UL.steplist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: decimal;
+}
+UL.steplist LI {
+	PADDING-RIGHT: 0.5em; DISPLAY: inline; PADDING-LEFT: 0px; FONT-SIZE: 0.85em; PADDING-BOTTOM: 0px; MARGIN: 0px; TEXT-TRANSFORM: uppercase; PADDING-TOP: 0px;
+}
+UL.steplist LI.current {
+	FONT-WEIGHT: bold;
+}
+UL.steplist A {
+	TEXT-DECORATION: none;
+}
+UL.plain {
+	PADDING-LEFT: 1.5em; LIST-STYLE-TYPE: none;
+}
+DIV.separator {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.5em; PADDING-BOTTOM: 0px; MARGIN: 1em 0em 0.25em; WIDTH: 595px; LINE-HEIGHT: 25%; PADDING-TOP: 0px; BORDER-BOTTOM: #8b7860 1px solid;
+}
+

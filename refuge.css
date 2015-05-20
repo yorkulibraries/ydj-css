@@ -13,6 +13,11 @@
  * Common HTML elements
  */
 
+div#main > h2:nth-child(1) {display:none;}
+
+#main h2 {display:none;}
+
+#announcementsHome h3 {display:none;}
 
 BODY {
 	padding:0px; MARGIN: 0px; COLOR: #111; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; BACKGROUND: #ecf8fc url('background.png') repeat-y center; 
@@ -20,6 +25,7 @@ BODY {
 DIV {
 	LINE-HEIGHT: 140%; TEXT-ALIGN: left
 }
+
 TABLE {
 	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 1em; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; border-spacing: 0
 }
@@ -116,7 +122,7 @@ INPUT.defaultButton {
 
 
 #main {
-	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; WIDTH: 899px; PADDING-TOP: 0em; BACKGROUND-COLOR: #ffffff; margin: 0 auto;
+	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; WIDTH: 80%; PADDING-TOP: 0em; BACKGROUND-COLOR: #ffffff; margin: 0 auto;
 }
 #main H2 {
 	FONT-WEIGHT: normal; FONT-SIZE: 1.3em; MARGIN: 0em 1em 0.5em 0.5em; PADDING-TOP: 0.5em; FONT-FAMILY: Georgia,'Times New Roman',Times,serif; BACKGROUND-COLOR: #ffffff

@@ -2,6 +2,12 @@
     display:none;
 }
 
+#journalDescription {
+    font-size: 12pt;
+    line-height: 125%;
+    font-family: Calibri;
+}
+
 BODY {
     background-color: #FFFFFF;
     background-image: url('background.jpg');

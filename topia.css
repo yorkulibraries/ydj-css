@@ -171,6 +171,11 @@ input.button {
 	line-height: 130%;
 }
 
+#content h3 {
+	font: bold 1.8em/1.2em Helvetica, Verdana, sans-serif; 
+	color: #87AE00; 
+}
+
 #navbar {
 	width: 150px;
 	float: left;
@@ -193,8 +198,9 @@ input.button {
  padding-left: 10px;
 	/* padding: 0; */
 	padding-top: 0.5em;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	border-top: none;
+	color:#ffffff;
 }
 
  
@@ -418,6 +424,7 @@ span.formRequired {
 	height: 100%;
 	margin-right: 2%;
 	margin-left: 2%;
+	color:#fff;
 }
 
 #issue {
