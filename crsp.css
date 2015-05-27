@@ -2,6 +2,10 @@
     display:none;
 }
 
+#aboutPeople li:nth-child(2) {
+    display:none;
+}
+
 #journalDescription {
     font-size: 12pt;
     line-height: 125%;
