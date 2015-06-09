@@ -8,7 +8,7 @@
  *
  * $Id: common.css,v 1.71.2.1 2009/04/08 19:43:30 asmecher Exp $
  */
-/* hidden elements 
+/* hidden elements */
 
 #navbar ul.menu li:nth-child(2) {display:none;}
 #navbar ul.menu li:nth-child(4) {display:none;}
@@ -24,14 +24,11 @@
 #current {
     display:none;
     }
-*/
+
 /**
  * Common HTML elements
  */
-/*
- * Common HTML elements
- * Stylesheet edited by Marcia Johnson for TOPIA
- */
+
 /* headers */
 
 h1 {
@@ -153,9 +150,8 @@ input.button {
 }
 
 #headerTitle {
-	background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/84/theader2.jpg');
-	/*background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/159/etopia-header.png');
-	 AK - change back to theader.jpg when ready to implement header block (when sidebar plugin is ready) */
+	background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/159/etopia-header.png');
+	/* AK - change back to theader.jpg when ready to implement header block (when sidebar plugin is ready) */
 	background-repeat: no-repeat;
 	text-align:left;
 	width:100%

@@ -11,9 +11,78 @@
  
  /* These are to hide page elements */
  
-#register {
+#aboutPolicies li:nth-child(1) {
     display:none;
 }
+
+#aboutSubmissions {
+    display:none;
+}
+
+#aboutOther {
+    display:none;
+}
+
+input#registerAsReader {
+    display:none;
+}
+
+form#register tr:nth-child(7) {
+    display:none;
+}
+
+form#register tr:nth-child(9) {
+    display:none;
+}
+
+form#register tr:nth-child(11) {
+    display:none;
+}
+
+form#register tr:nth-child(12) {
+    display:none;
+}
+
+form#register tr:nth-child(13) {
+    display:none;
+}
+
+form#register tr:nth-child(14) {
+    display:none;
+}
+
+form#register tr:nth-child(17) {
+    display:none;
+}
+
+form#register tr:nth-child(18) {
+    display:none;
+}
+
+form#register tr:nth-child(19) {
+    display:none;
+}
+
+form#register tr:nth-child(20) {
+    display:none;
+}
+
+form#register tr:nth-child(21) {
+    display:none;
+}
+
+form#register tr:nth-child(22) {
+    display:none;
+}
+
+form#register tr:nth-child(23) {
+    display:none;
+}
+
+form#register tr:nth-child(25) {
+    display:none;
+}
+
 
 /**
  * Common HTML elements c1c2c3

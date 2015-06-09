@@ -16,14 +16,12 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #ededee;
 	color: #111;
-	background-image: url('background.jpg');
 	background-repeat:repeat-y;
 	background-position:center;
 	font-family: Verdana,Arial,Helvetica,sans-serif;
 	/** http://www.yorku.ca/akosavic/ojshome/YorkULogo.gif **/
-
+	background-color: #FBFBF3;
 }
 
 div {
@@ -46,20 +44,20 @@ a {
 }
 
 a:link {
-	color: #000000;
+	color: #254061;
 }
 
 a:active {
-	color: #000000;
+	color: #254061;
 }
 
 a:visited {
-	color: #000000;
+	color: #254061;
 }
 
 a:hover {
-	color: #ffffff;
-	background: #000000;
+	background: transparent;
+	color: #caa9db;
 }
 
 a.plain {
@@ -96,12 +94,12 @@ input.textField, select.selectMenu, textarea.textArea, input.uploadField {
 input.button {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
-	background-color: #DDDDD0;
+	background-color: #caa9db;
 	font-size: 1em;
 }
 
 input.defaultButton {
-	background-color: #DDDDD0;
+	background-color: #caa9db;
 	color: #FBFBF3;
 	font-weight: bold;
 }
@@ -115,42 +113,41 @@ input.defaultButton {
 	line-height: 125%;
 	text-align: center;
 	margin: 0 auto;
-	background:transparent url('header.jpg');
 	background-repeat:no-repeat;
 	background-position:top;
-	height: 433px;
 }
 
 #header {
 	padding: 0;
 	margin: 0 auto;
-	background-color: transparent;
+	background-color: #254061;
 	text-align: center;
 	border-bottom:0px;
-	height:118px;
+	height:195px;
 }
 
 #headerTitle {
 	text-align: left;
 	margin: 0 auto;
 	padding: 0;
-	width: 800px;
+	width: 1000px;
 	background-color: transparent;
 }
 
 #header h1 {
 	margin: 0 auto;
-	padding: 55px 0px 0px 20px;
-	font-family: "Times New Roman", Times, serif;
+	padding: 10px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
 	font-weight:bold;
-	font-size: 2.2em;	
+	font-size: 1.4em;
+	text-transform: uppercase;
 	color:#FFFFFF;
 
 }
 
 #body {
-	width: 800px;
-	margin: 0 auto;
+	width: 960px;
+	margin: auto;
 	padding-left:40px;
 	background-color: transparent;
 }
@@ -160,23 +157,24 @@ input.defaultButton {
 	min-height: 50px;
 	position: relative;
 	clear: both;
-	background-color: #ABA;
+	background-color: #FBFBF3;
 	text-align: center;
 }
 
 #footerContent {
-	width: 800px;
+	width: 1000px;
 	margin: 0 auto;
 }
 
 #rightSidebar {
 	float: right;
 	width: 165px;
-	padding: 5em 0em 1em 0em;
-	font-size: 0.65em;
+	padding: 1em 0em 1em 0em;
+	font-size: 0.75em;
 	height: 100%;
 	margin-right: 4%;
 	margin-left: 2%;
+	margin-top: 80px;
 	overflow: visible;
 }
 
@@ -196,8 +194,7 @@ input.defaultButton {
 	margin: 0em 1em 0.5em 0em;
 	padding-top: 0.8em;
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-size: 1.3em;
+	font-weight: normal;
 }
 
 #main h3 {
@@ -210,32 +207,37 @@ input.defaultButton {
 #navbar {
 	margin-right: 0;
 	padding-bottom: 0;
+	border-bottom:0px;
 	padding-top: 10px;
 	background-color: 'transparent';
-	border-bottom: 0px;
-
+	font-size:14pt;
+	text-align: center;
 }
 
 #breadcrumb {
-	padding-top: 1.4em;
-	font-size: 0.6em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 0.8em;
+	border-bottom: 1px solid #caa9db;
+	border-top: 1px solid #caa9db;
+	text-align: center;
 }
 
 #content {
-	width: 550px;
+	width: 75%;
 	margin: 0;
 	padding: 0;
 	padding-top: 0.5em;
-	font-size: 0.7em;
-	border-top: 0px solid #999999;
+	font-size: 0.75em;
+	border-top: 1px solid #caa9db;
 }
 
 #content h3 {
 	margin: 0em 1em 0.25em 0em;
 	padding-top: 0.75em;
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-size: 1.4em;
+	font-weight: normal;
+	font-size: 1.8em;
 	line-height: 1.35em;
 }
 
@@ -244,7 +246,7 @@ input.defaultButton {
 	padding-top: 0.75em;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 #content h5 {
@@ -260,29 +262,28 @@ input.defaultButton {
  */
 
 #navbar a {
-	font-size: 0.65em;
+	font-size: 0.75em;
 	letter-spacing: 0em;
+	color: #254061;
 	font-weight: bold;
 }
 
 #navbar a:link {
-color: #ffffff;
+color: #254061;
 }
 
 #navbar a:active {
-color: #ffffff;
+color: #254061;
 }
 
 #navbar a:visited {
-color: #ffffff;
+color: #254061;
 }
 
 #navbar a:hover {
-color: #ffffff;
-background: transparent;
-text-decoration:underline;
-padding-top:5px;
-padding-bottom:6px;
+	padding-top:5px;
+	padding-bottom:6px;
+	color: #caa9db;
 
 }
 
@@ -323,24 +324,21 @@ padding-bottom:6px;
 }
 
 #sidebar a:link {
-color: #000000;
-text-decoration:underline;
+color: #254061;
 }
 
 #sidebar a:active {
-color: #000000;
-text-decoration:underline;
+color: #254061;
 }
 
 #sidebar a:visited {
-color: #000000;
-text-decoration:underline;
+color: #254061;
 }
 
 #sidebar a:hover {
-color: #FFFFFF;
+color: #caa9db;
 text-decoration:underline;
-background:#000000;
+background:none;
 
 }
 
@@ -354,19 +352,19 @@ background:#000000;
 }
 
 #breadcrumb a:link {
-color: #F5F5DC;
+color: #254061;
 }
 
 #breadcrumb a:active {
-color: #F5F5DC;
+color: #254061;
 }
 
 #breadcrumb a:visited {
-color: #F5F5DC;
+color: #254061;
 }
 
 #breadcrumb a:hover {
-color: #F5F5DC;
+color: #caa9db;
 text-decoration:underline;
 background:none;
 
@@ -396,7 +394,7 @@ span.disabled, label.disabled {
 
 a.action, a.file {
 	font-size: 0.85em;
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
 }
 
 a.icon {
@@ -560,7 +558,7 @@ ul.menu li.current {
 
 ul.menu a {
 	font-size: 0.85em;
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
 	text-decoration: none;
 }
 
@@ -576,7 +574,7 @@ ul.steplist li {
 	font-size: 0.85em;
 	padding-right: 0.5em;
 	display: inline;
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
 }
 
 ul.steplist li.current {

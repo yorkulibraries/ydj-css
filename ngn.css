@@ -1,3 +1,71 @@
+#aboutSubmissions li:nth-child(1) {display:none;}
+
+/* registration form */
+
+input#registerAsReader {
+    display:none;
+}
+
+form#register tr:nth-child(7) {
+    display:none;
+}
+
+form#register tr:nth-child(9) {
+    display:none;
+}
+
+form#register tr:nth-child(11) {
+    display:none;
+}
+
+form#register tr:nth-child(12) {
+    display:none;
+}
+
+form#register tr:nth-child(13) {
+    display:none;
+}
+
+form#register tr:nth-child(14) {
+    display:none;
+}
+
+form#register tr:nth-child(17) {
+    display:none;
+}
+
+form#register tr:nth-child(18) {
+    display:none;
+}
+
+form#register tr:nth-child(19) {
+    display:none;
+}
+
+form#register tr:nth-child(20) {
+    display:none;
+}
+
+form#register tr:nth-child(21) {
+    display:none;
+}
+
+form#register tr:nth-child(22) {
+    display:none;
+}
+
+form#register tr:nth-child(23) {
+    display:none;
+}
+
+form#register tr:nth-child(25) {
+    display:none;
+}
+
+form#register tr:nth-child(26) {
+    display:none;
+}
+
 BODY {
 	padding:0px; MARGIN: 0px; COLOR: #111; FONT-FAMILY: Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #ffffff;BACKGROUND-IMAGE: url('background.png'); background-repeat: repeat-y; background-position: center;
 }

@@ -2,22 +2,6 @@
  * Common HTML elements
  * Stylesheet edited by Marcia Johnson for TOPIA
  */
-/* hidden elements */
-
-#navbar ul.menu li:nth-child(2) {display:none;}
-#navbar ul.menu li:nth-child(4) {display:none;}
-#navbar ul.menu li:nth-child(6) {display:none;}
-
-#about {
-    display:none;
-    }
-
-#login {display:none;}
-#register {display:none;}
-    
-#current {
-    display:none;
-    } 
  
 /* headers */
 
@@ -140,9 +124,8 @@ input.button {
 
 #headerTitle {
 	background-color: #1c1c1c; 
-	background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/159/etopia-header.png');
-	/*background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/84/theader2.jpg');
-	 AK - change back to theader.jpg when ready to implement header block (when sidebar plugin is ready) */
+	background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/84/theader2.jpg');
+	/* AK - change back to theader.jpg when ready to implement header block (when sidebar plugin is ready) */
 	background-repeat: no-repeat;
 	text-align:left;
 	width:100%
