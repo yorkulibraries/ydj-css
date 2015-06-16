@@ -8,6 +8,76 @@
  *
  * $Id: common.css,v 1.39 2006/07/01 17:36:16 alec Exp $
  */
+ /*hidden elements*/
+
+#aboutSubmissions li:nth-child(1) {display:none;}
+
+/* registration form */
+
+input#registerAsReader {
+    display:none;
+}
+
+form#register tr:nth-child(7) {
+    display:none;
+}
+
+form#register tr:nth-child(9) {
+    display:none;
+}
+
+form#register tr:nth-child(11) {
+    display:none;
+}
+
+form#register tr:nth-child(12) {
+    display:none;
+}
+
+form#register tr:nth-child(13) {
+    display:none;
+}
+
+form#register tr:nth-child(14) {
+    display:none;
+}
+
+form#register tr:nth-child(17) {
+    display:none;
+}
+
+form#register tr:nth-child(18) {
+    display:none;
+}
+
+form#register tr:nth-child(19) {
+    display:none;
+}
+
+form#register tr:nth-child(20) {
+    display:none;
+}
+
+form#register tr:nth-child(21) {
+    display:none;
+}
+
+form#register tr:nth-child(22) {
+    display:none;
+}
+
+form#register tr:nth-child(23) {
+    display:none;
+}
+
+form#register tr:nth-child(25) {
+    display:none;
+}
+
+form#register tr:nth-child(26) {
+    display:none;
+}
+
 
 /**
  * Common HTML elements
@@ -116,7 +186,7 @@ input.defaultButton {
 	line-height: 125%;
 	text-align: center;
 	margin: 0 auto;
-	background-image: url('hssh_header.jpg');
+	background-image: url('hssh_header2.jpg');
 	background-repeat:no-repeat;
 	background-position:top; 
 }

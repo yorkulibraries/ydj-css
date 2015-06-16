@@ -1,3 +1,11 @@
+/* hidden elements */
+
+#login {display:none;}
+#register {display:none;}
+
+#aboutSubmissions li:nth-child(1) {display:none;}
+#aboutSubmissions li:nth-child(2) {display:none;}
+
 /** Common HTML elements
 
  */
