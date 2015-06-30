@@ -52,7 +52,7 @@ a:hover {
 }
 
 #header2 {
-	background: url("http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/162/witness-background.png") repeat-x scroll 0 0 #FFFFFF; 
+	background: url("/public/journals/162/witness-background.png") repeat-x scroll 0 0 #FFFFFF; 
 	height:220px;
 	background-color: #fff;
 	text-align: center;
@@ -109,7 +109,7 @@ a:hover {
 
 #main {
 	background-color: #fff;
-	width:80%;
+	width:65%;
 	padding-top:0em;
 }
 
@@ -133,7 +133,7 @@ a:hover {
 	font-size:medium;
 	color:#fff;
 	float:left;
-	background: url("http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/162/menu700px.jpg");
+	background: url("/public/journals/162/menu700px.jpg");
 	height:690px;
 }
 
@@ -145,7 +145,7 @@ font-size:medium;
 }
 
 #navbar li.menu {
-	background:url("http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/162/maple-leaf.png");
+	background:url("/public/journals/162/maple-leaf.png");
 	background-repeat:no-repeat;
 	background-position:left 20px;
 	font-size:medium;
@@ -193,7 +193,7 @@ ul.menu li {
 	display:list-item;
 	padding:0.25em 0.5em 0.25em 25px;
 	text-transform:none;
-	background:url("http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/162/maple-leaf.png");
+	background:url("/public/journals/162/maple-leaf.png");
 	background-repeat:no-repeat;
 	background-position:left 18px;
 	font-size:25px;
@@ -249,7 +249,7 @@ ul.menu a:active {color:#fff;font-size:medium;}
 	padding: 1em 0em 1em 0em;
 	font-size: 0.65em;
 	height: 100%;
-	margin-right: 2%;
+	margin-right: -15%;
 	margin-left: 2%;
 	position:relative;
 }
@@ -263,6 +263,6 @@ ul.menu a:active {color:#fff;font-size:medium;}
 	font-size:medium;
 	height:700px;
 	margin-right: 2%;
-	background: url("http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/162/menu700px.jpg");
+	background: url("/public/journals/162/menu700px.jpg");
 	background-size: 220px;	
 } 
