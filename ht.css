@@ -10,10 +10,9 @@
 
 #search {display:none;}
 #current {display:none;}
-#archives {display:none;}
 #breadcrumb {display:none;}
 
-#content {width:100%}
+#content {width:100%;font-size:0.8em;}
  
 #main {border:none;}
  
