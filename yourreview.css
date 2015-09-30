@@ -8,6 +8,15 @@
  *
  * $Id: common.css,v 1.39 2006/07/01 17:36:16 alec Exp $
  */
+/* hidden elements */
+
+#onlineSubmissions {
+    display: none;
+}
+
+#aboutSubmissions li:nth-child(1) {
+    display: none;
+}
 
 /**
  * Common HTML elements
@@ -256,6 +265,9 @@ input.defaultButton {
 	font-size: 1em;
 }
 
+#pageFooter {
+    text-align: center;
+}
 
 /**
  * Navigation bar
