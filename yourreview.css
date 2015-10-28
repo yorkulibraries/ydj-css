@@ -21,6 +21,20 @@
 /**
  * Common HTML elements
  */
+#author {
+    text-transform:uppercase;
+    padding-bottom:3em;
+}
+
+#title {
+    border-bottom: 1px solid #000;
+    line-height:200%;
+    }
+
+#subtitle h2 {
+    font-size:1.5em;
+    font-weight:bold;
+}
 
 body {
 	margin: 0;
@@ -239,6 +253,7 @@ input.defaultButton {
 	padding-top: 0.5em;
 	font-size: 0.90em;
 	border-top: 1px solid #caa9db;
+	line-height:140%;
 }
 
 #content h3 {
