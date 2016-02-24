@@ -14,6 +14,18 @@
 /**
  * Common HTML elements c1c2c3
  */
+ 
+#pdfDownloadLinkContainer {
+    display:none;
+}
+
+paper-icon-button {
+    display:none;
+}
+
+#material-toolbar {
+    display:none;
+}
 
 body {
 	margin: 0;

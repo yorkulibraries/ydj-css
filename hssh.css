@@ -186,7 +186,7 @@ input.defaultButton {
 	line-height: 125%;
 	text-align: center;
 	margin: 0 auto;
-	background-image: url('hssh_header2.jpg');
+	background-image: url('http://hssh.journals.yorku.ca/public/journals/102/homeHeaderLogoImage_en_US.png');
 	background-repeat:no-repeat;
 	background-position:top; 
 }
@@ -196,7 +196,7 @@ input.defaultButton {
 	margin: 0 auto;
 	background-color: transparent;
 	text-align: center;
-	height:160px;
+	height:210px;
 }
 
 #headerTitle {
