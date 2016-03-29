@@ -1,16 +1,29 @@
 /**
  * common.css
  *
- * Copyright (c) 2003-2006 John Willinsky
+ * Copyright (c) 2013-2014 Simon Fraser University Library
+ * Copyright (c) 2000-2014 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * Site-wide shared stylesheet.
- *
- * $Id: common.css,v 1.39 2006/07/01 17:36:16 alec Exp $
+ * PKP-wide shared stylesheet.
+ * DEPRECATED. Do not modify.
  */
+
+/**
+ * Common HTML elements
+ */
+
  /*hidden elements*/
 
 #aboutSubmissions li:nth-child(1) {display:none;}
+
+#aboutPolicies li:nth-child(2) {
+    display:none;
+}
+
+#sectionPolicies {
+    display:none;
+}
 
 /* registration form */
 
@@ -79,21 +92,13 @@ form#register tr:nth-child(26) {
 }
 
 
-/**
- * Common HTML elements
- */
-
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #ffffff;
 	color: #111;
-	/* background-image: url('background.jpg'); */
-	background-color: #ffffff; 
-	background-repeat:repeat-y;
-	background-position:center;
 	font-family: Verdana,Arial,Helvetica,sans-serif;
-	/** http://www.yorku.ca/akosavic/ojshome/YorkULogo.gif **/
-
+	text-align: center;
 }
 
 div {
@@ -105,10 +110,6 @@ table {
 	border: 0px none;
 	border-spacing: 0;
 	font-size: 1.0em
-}
-
-form {
-	margin: 0;
 }
 
 a {
@@ -132,50 +133,7 @@ a:hover {
 	background: #587B9E;
 }
 
-a.plain {
-	text-decoration: none;
-}
 
-ul {
-	margin: 0.25em 0 0.75em 0;
-	padding: 0 0 0 2.5em;
-}
-
-tt {
-	font-size: 1.25em;
-}
-
-label {
-}
-
-label.error {
-	color: #900;
-}
-
-input.textField, select.selectMenu, textarea.textArea, input.uploadField {
-	background-color: #F0F0E8;
-	color: #000;
-	font-family: Verdana,Arial,Helvetica,sans-serif;
-	border-top: 2px solid #666;
-	border-left: 2px solid #666;
-	border-bottom: 2px solid #E8E8E1;
-	border-right: 2px solid #E8E8E1;
-	font-size: 1em;
-}
-
-input.button {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	background-color: #071F5D;
-	color:#ffffff;
-	font-size: 1em;
-}
-
-input.defaultButton {
-	background-color: #587B9E;
-	color: #FFFFFF;
-	font-weight: bold;
-}
 
 
 /**
@@ -183,36 +141,29 @@ input.defaultButton {
  */
 
 #container {
-	width: 100% !important;
-	min-width: 730px !important;
-	margin: 0px auto;
-    line-height: 125%;
+	line-height: 125%;
 	text-align: center;
-/*	margin: 0 auto;
-	background-image: url('http://hssh.journals.yorku.ca/public/journals/102/homeHeaderLogoImage_en_US.png');
-	background-repeat:no-repeat;
-	background-position:top; */
+	margin: 0 auto;
 }
 
 #header {
-	/*padding: 0;
+	padding: 0;
 	margin: 0 auto;
-	background-color: transparent;*/
+	background-color: transparent;
 	text-align: center;
 	height:210px;
 }
 
 #headerTitle {
-	text-align: left !important;
+	text-align: center !important;
 	margin: 0 auto;
 	padding: 0;
 	width: 800px;
-/*	display:none;*/
 }
 
 #header h1 {
 	margin: 0 auto;
-	padding: 0.5em 0 0.5em 0;
+	padding: 0 0 0 0;
 	font-family: 'Trebuchet MS',Georgia,Times New Roman,Times,serif;
 	font-weight: normal;
 	font-size: 1.7em;
@@ -309,13 +260,29 @@ input.defaultButton {
 	font-size: 1.5em;
 }
 
-#content h5 {
-	margin: 0em 1em 0.25em 0em;
-	padding-top: 0.75em;
-	font-weight: bold;
-	font-size: 1em;
+
+/**
+ * Breadcrumbs
+ */
+
+#breadcrumb a:link {
+color: #071F5D;
 }
 
+#breadcrumb a:active {
+color: #071F5D;
+}
+
+#breadcrumb a:visited {
+color: #071F5D;
+}
+
+#breadcrumb a:hover {
+color: #071F5D;
+text-decoration:underline;
+background:none;
+
+}
 
 /**
  * Navigation bar
@@ -401,149 +368,3 @@ background:none;
 }
 
 
-/**
- * Breadcrumbs
- */
-
-#breadcrumb a {
-	text-decoration: none;
-}
-
-#breadcrumb a:link {
-color: #071F5D;
-}
-
-#breadcrumb a:active {
-color: #071F5D;
-}
-
-#breadcrumb a:visited {
-color: #071F5D;
-}
-
-#breadcrumb a:hover {
-color: #071F5D;
-text-decoration:underline;
-background:none;
-
-}
-
-#breadcrumb a.current {
-	font-weight: bold;
-}
-
-
-/**
- * Footer elements
- */
-
-#footer div.debugStats {
-	font-size: 0.6em;
-}
-
-/**
- * Additional text styles
- */
-
-span.disabled, label.disabled {
-	color: #666;
-}
-
-a.action, a.file {
-	font-size: 0.85em;
-	text-transform: uppercase;
-}
-
-a.icon {
-	text-decoration: none;
-}
-
-a.icon:hover {
-	background: none;
-}
-
-span.formRequired {
-	color: #333;
-	font-size: 0.9em;
-}
-
-span.instruct {
-}
-
-span.heading {
-	font-size: 0.85em;
-	text-transform: uppercase;
-}
-
-span.highlight {
-	border-bottom: 0px dotted #000;
-}
-
-.nowrap {
-	white-space: nowrap;
-}
-
-
-/**
- * Other organizational elements
- */
-
-ul.menu {
-	margin: 0;
-	padding: 0;
-}
-
-ul.menu li {
-	margin: 0;
-	padding: 0;
-	padding-right: 1.5em;
-	display: inline;
-}
-
-ul.menu li.current {
-	font-weight: bold;
-}
-
-ul.menu a {
-	font-size: 0.85em;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-ul.steplist {
-	margin: 0;
-	padding: 0;
-	list-style-type: decimal;
-}
-
-ul.steplist li {
-	margin: 0;
-	padding: 0;
-	font-size: 0.85em;
-	padding-right: 0.5em;
-	display: inline;
-	text-transform: uppercase;
-}
-
-ul.steplist li.current {
-	font-weight: bold;
-}
-
-ul.steplist a {
-	text-decoration: none;
-}
-
-ul.plain {
-	list-style-type: none;
-	padding-left: 1.5em;
-}
-
-div.separator {
-	width: 100%;
-	margin-top: 1em;
-	margin-bottom: 0.25em;
-	padding: 0;
-	border-bottom: 0px dotted #000;
-	font-size: 0.5em;
-	line-height: 25%;
-}
