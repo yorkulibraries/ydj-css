@@ -183,28 +183,31 @@ input.defaultButton {
  */
 
 #container {
-	line-height: 125%;
+	width: 100% !important;
+	min-width: 730px !important;
+	margin: 0px auto;
+    line-height: 125%;
 	text-align: center;
-	margin: 0 auto;
+/*	margin: 0 auto;
 	background-image: url('http://hssh.journals.yorku.ca/public/journals/102/homeHeaderLogoImage_en_US.png');
 	background-repeat:no-repeat;
-	background-position:top; 
+	background-position:top; */
 }
 
 #header {
-	padding: 0;
+	/*padding: 0;
 	margin: 0 auto;
-	background-color: transparent;
+	background-color: transparent;*/
 	text-align: center;
 	height:210px;
 }
 
 #headerTitle {
-	text-align: left;
+	text-align: left !important;
 	margin: 0 auto;
 	padding: 0;
 	width: 800px;
-	display:none;
+/*	display:none;*/
 }
 
 #header h1 {
