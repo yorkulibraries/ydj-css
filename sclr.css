@@ -15,6 +15,14 @@
 
 #about {display:none;}
 
+#register {display:none;}
+
+#login {display:none;}
+
+#aboutPeople {display:none;}
+
+#editorialTeam {display:none;}
+
 /* registration form */
 
 input#registerAsReader {
