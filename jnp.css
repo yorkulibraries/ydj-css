@@ -36,6 +36,7 @@ body {
 
 #navbar {
   font-size:0.9em;
+  border-bottom: 1px solid #ccc;
 }
 
 #navbar a:hover {
@@ -82,11 +83,10 @@ a:active {
   text-decoration: underline;
 }
 
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 2em;
+ul.steplist a:hover {
+  text-decoration:underline;
 }
 
-
+input.defaultButton {
+  background-color:#1982d1;
+}
