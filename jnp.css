@@ -1,0 +1,92 @@
+/**
+ * jnp.css
+ *
+ * Copyright (c) 2003-2006 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared stylesheet.
+ *
+ * $Id: common.css,v 1.39 2006/07/01 17:36:16 alec Exp $
+ */
+
+/**
+ * Common HTML elements
+ */
+
+body {
+  background: #f1f1f1;
+  color: #444;
+  font-size: 1.1em;
+  line-height: 1.3em;  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+  border-top: 1px solid #ccc;
+  font-size:0.9em;
+}
+
+#breadcrumb {
+  font-size:0.9em;
+}
+
+#breadcrumb a:hover {
+  text-decoration:underline;
+}
+
+#navbar {
+  font-size:0.9em;
+}
+
+#navbar a:hover {
+  text-decoration:underline;
+}
+
+#header {
+  background-color:transparent;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  clear: both;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.3em;
+}
+
+#header h1 {
+  clear: both;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.3em;
+  padding:0em 0 0em 10%;
+}
+
+a:link {
+  color: #1982d1;
+  text-decoration: none;
+}
+a:focus {
+  color: #1982d1;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #1982d1;
+  text-decoration: underline;
+}
+a:hover {
+  color: #1982d1;
+  text-decoration: underline;
+  background-color:transparent;
+}
+a:active {
+  color: #1982d1;
+  text-decoration: underline;
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 2em;
+}
+
+
