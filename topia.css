@@ -2,32 +2,36 @@
  * Common HTML elements
  * Stylesheet edited by Marcia Johnson for TOPIA
  */
- 
+
+ /*hidden elements*/
+
+ #issues div:last-child h3 {display:none;}
+
 /* headers */
 
 h1 {
-	font: bold 2.8em/1.1em Helvetica, Verdana, sans-serif; 
-	color: #87AE00; 
+	font: bold 2.8em/1.1em Helvetica, Verdana, sans-serif;
+	color: #87AE00;
 }
 
 h2 {
-	font: bold 2.2em/1.1em Helvetica, Verdana, sans-serif; 
+	font: bold 2.2em/1.1em Helvetica, Verdana, sans-serif;
 	color: #87AE00; 
 }
 
 h3 {
-	font: bold 1.8em/1.2em Helvetica, Verdana, sans-serif; 
-	color: #87AE00; 
+	font: bold 1.8em/1.2em Helvetica, Verdana, sans-serif;
+	color: #87AE00;
 }
 
 h4 {
-	font: bold 1.5em/1.1em Helvetica, Verdana, sans-serif; 
-	color: #90BA00; 
+	font: bold 1.5em/1.1em Helvetica, Verdana, sans-serif;
+	color: #90BA00;
 }
 
 h5 {
-	font: normal 1.3em/1.1em Helvetica, Verdana, sans-serif; 
-	color: #000; 
+	font: normal 1.3em/1.1em Helvetica, Verdana, sans-serif;
+	color: #000;
 }
 
 /* Existing Styles */
@@ -54,13 +58,13 @@ a {
 }
 
 a:link {
-	color: #FFFFFF; 
+	color: #FFFFFF;
 }
 
 a:active {
 	color: #87AE00;
 }
-	
+
 a:visited {
 	color: #77C99E;
 }
@@ -116,14 +120,14 @@ input.button {
 
 #header {
 	width:100%;
-	background-color: #3E4447;  
+	background-color: #3E4447;
 	background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/84/container.jpg');
 	background-repeat: no-repeat;
 	text-align: left
 }
 
 #headerTitle {
-	background-color: #1c1c1c; 
+	background-color: #1c1c1c;
 	background-image: url('http://pi.library.yorku.ca/ojs/ojs-data/ojs-public-files/journals/84/theader2.jpg');
 	/* AK - change back to theader.jpg when ready to implement header block (when sidebar plugin is ready) */
 	background-repeat: no-repeat;
@@ -134,7 +138,7 @@ input.button {
 #headerTitle h1 {
 	visibility: hidden;
 	padding-bottom: 0px;
-	padding-top: 18px; 
+	padding-top: 18px;
 	/*line-height: 100%; Added based on Marcia's suggestion*/
 }
 
@@ -142,23 +146,23 @@ input.button {
 	float: right;
 	display: block;
 	text: 75%;
-	padding-top: 35px; 
+	padding-top: 35px;
 	padding-right: 2%;
 }
-	
+
 #home_sitemap {
-	font-family: Helvetica, Verdana, sans-serif; 
+	font-family: Helvetica, Verdana, sans-serif;
 	float:right;
-	display:block; 
-	text-transform: uppercase; 
+	display:block;
+	text-transform: uppercase;
 	font-weight: bold;
-	font-size:70%; 
-	padding-right: 15px; 
+	font-size:70%;
+	padding-right: 15px;
 	padding-top: 5px;
 	margin-right: -24%;
 }
 
-#main { 
+#main {
  	height:100%;
  	margin-left: 2%;
 	width:775px;
@@ -173,8 +177,8 @@ input.button {
 }
 
 #content h3 {
-	font: bold 1.8em/1.2em Helvetica, Verdana, sans-serif; 
-	color: #87AE00; 
+	font: bold 1.8em/1.2em Helvetica, Verdana, sans-serif;
+	color: #87AE00;
 }
 
 #navbar {
@@ -204,60 +208,60 @@ input.button {
 	color:#ffffff;
 }
 
- 
+
 /**
  * Navigation bar
  */
 
 #navbar ul.menu {
-	width:150px; 
-	padding:0; 
-	margin:0; 
-	text-transform:uppercase; 
-	list-style: none; 
-}
-	
-#navbar ul.menu li { 
-	font: bold 1.4em/1em helvetica, verdana, sans-serif;   
-	margin: 0; 
-	width: 150px;
-	display: block;  
+	width:150px;
+	padding:0;
+	margin:0;
+	text-transform:uppercase;
+	list-style: none;
 }
 
-#navbar ul.menu li li { 
-	font: bold 1.4em/1em helvetica, verdana, sans-serif;   
-	margin: 10px; 
+#navbar ul.menu li {
+	font: bold 1.4em/1em helvetica, verdana, sans-serif;
+	margin: 0;
 	width: 150px;
-	display: block;  
+	display: block;
+}
+
+#navbar ul.menu li li {
+	font: bold 1.4em/1em helvetica, verdana, sans-serif;
+	margin: 10px;
+	width: 150px;
+	display: block;
 }
 
 #navbar ul.menu li a {
-	color: #fff; 
-	background-color:none; 
-	width: 110px; 
-	height: 30px; 
-	padding:10px 0 0 10px; 
-	display:block; 
-	letter-spacing: -.5px; 
+	color: #fff;
+	background-color:none;
+	width: 110px;
+	height: 30px;
+	padding:10px 0 0 10px;
+	display:block;
+	letter-spacing: -.5px;
 }
 
 #navbar ul.menu li li a {
-	color: #fff; 
-	background-color:none; 
-	width: 110px; 
-	height: 30px; 
-	padding:10px 0 0 17px; 
-	display:block; 
-	letter-spacing: -.5px; 
+	color: #fff;
+	background-color:none;
+	width: 110px;
+	height: 30px;
+	padding:10px 0 0 17px;
+	display:block;
+	letter-spacing: -.5px;
 }
-		
+
 #navbar ul.menu li.first a {
-	background: none; 
+	background: none;
 	height:32px;
 }
 
 #navbar ul.menu li li.first a {
-	background: none; 
+	background: none;
 	height:32px;
 }
 
@@ -268,17 +272,17 @@ input.button {
 #navbar ul.menu li li.middle a {
 	background: none;
 }
-		
+
 #navbar ul.menu li.last a {
-	background:none; 
-	height:32px; 
+	background:none;
+	height:32px;
 }
-	
+
 #navbar ul.menu li li.last a {
-	background:none; 
-	height:32px; 
+	background:none;
+	height:32px;
 }
-		
+
 #navbar ul.menu li.first a:hover {
 	background: #BCE4C9;
 }
@@ -286,15 +290,15 @@ input.button {
 #navbar ul.menu li li.first a:hover {
 	background: #BCE4C9;
 }
-			
+
 #navbar ul.menu li.middle a:hover {
-	background:#BCE4C9; 
+	background:#BCE4C9;
 }
 
 #navbar ul.menu li li.middle a:hover {
-	background:#BCE4C9; 
+	background:#BCE4C9;
 }
-			
+
 #navbar ul.menu li.last a:hover {
 	background: #BCE4C9;
 }
@@ -302,29 +306,29 @@ input.button {
 #navbar ul.menu li li.last a:hover {
 	background: #BCE4C9;
 }
-		
+
 #navbar ul.menu li a:active {
-	color: #87AE00; 
-	background-color:none; 
-	text-decoration:none; 
+	color: #87AE00;
+	background-color:none;
+	text-decoration:none;
 }
 
 #navbar ul.menu li a:hover {
-	color: #77C99E; 
-	background-color:none; 
-	text-decoration:none; 
+	color: #77C99E;
+	background-color:none;
+	text-decoration:none;
 }
 
 #navbar ul.menu li a:visited {
-	color: #87AE00; 
-	background-color:none; 
-	text-decoration:none; 
+	color: #87AE00;
+	background-color:none;
+	text-decoration:none;
 }
 
 /**
  * Announcements
  */
- 
+
  table.announcements td.headseparator {
 	border-top: 1px solid #FFF;
 	font-size: 0.1em;
@@ -360,8 +364,8 @@ span.disabled, label.disabled {
 /**
  * Table styles
  */
- 
-/*AK added this entire element*/ 
+
+/*AK added this entire element*/
 
 
 table.listing td {
@@ -394,7 +398,7 @@ table.listing td.separator, table.info td.separator {
 /**
  * Other organizational elements
  */
- 
+
 div.separator {
 	width: 100%;
 	margin-top: 1em;
@@ -403,7 +407,7 @@ div.separator {
 	border-bottom: 1px solid #BFBFBF;
 	font-size: 0.5em;
 	line-height: 25%;
-}  
+}
 
 #sidebar div.block {
 	font-size: 1em;
