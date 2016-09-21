@@ -13,6 +13,10 @@
 #breadcrumb {display:none;}
 #onlineSubmissions {display:none;}
 
+#aboutSubmissions li:nth-child(1) {
+display:none;
+}
+
 #content {width:100%;font-size:0.8em;}
  
 #main {border:none;}
