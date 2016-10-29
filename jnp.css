@@ -3,8 +3,14 @@
  *
  */
 /**
- * Common HTML elements
- */
+ * Common HTML elements*/
+ 
+#onlineSubmissions {
+  display: none; }
+
+#aboutSubmissions li:nth-child(1) {
+  display: none; }
+
 body {
   background: #f1f1f1;
   color: #444;
