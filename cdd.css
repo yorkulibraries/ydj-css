@@ -14,7 +14,7 @@
  */
 
 body {
-	margin: 125px auto;
+	margin: 0;
 	padding: 0;
 	background-color: #ededee;
 	color: #111;
@@ -150,7 +150,7 @@ input.defaultButton {
 
 #body {
 	width: 800px;
-	margin: 0 auto;
+	margin: 125px auto;
 	padding-left:40px;
 	background-color: transparent;
 }
@@ -209,7 +209,6 @@ input.defaultButton {
 #navbar {
 	margin-right: 0;
 	padding-bottom: 0;
-/*	padding-top: 125px;*/
 	background-color: 'transparent';
 	border-bottom: 0px;
 
