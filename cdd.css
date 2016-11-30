@@ -115,7 +115,7 @@ input.defaultButton {
 	line-height: 125%;
 	text-align: center;
 	margin: 0 auto;
-	background:transparent url('header.jpg');
+/*	background:transparent url('header.jpg');*/
 	background-repeat:no-repeat;
 	background-position:top;
 }
