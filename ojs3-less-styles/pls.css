@@ -30,7 +30,7 @@
  */
 body {
   font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-  font-size: 50px;
+  font-size: 14px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.87);
   background: #fff;
@@ -176,6 +176,7 @@ img {
 .pkp_structure_head {
   background-color: #1E6292;
   border-bottom: 1px solid #ddd;
+  background-image: url("http://localhost:8000/ojs/public/site/hssh_current-header.png");
 }
 .pkp_head_wrapper {
   padding-top: 60px;
