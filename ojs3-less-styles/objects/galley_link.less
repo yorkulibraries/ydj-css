@@ -18,13 +18,9 @@
 
 	&:before {
 		&:extend(.fa);
-		content: @fa-var-file-text-o;
 		margin-right: 0.25em;
 	}
 
-	&.pdf:before {
-		content: @fa-var-file-pdf-o;
-	}
 
 	&.restricted {
 		border-color: @bg;
@@ -38,8 +34,6 @@
 
 		&:before {
 			&:extend( .fa );
-			content: @fa-var-lock;
-			color: @offset;
 		}
 	}
 }

@@ -8,11 +8,6 @@
  * @brief Reusable components
  */
 
-// Simple clearfix wrapper
-.row {
-	.pkp_helpers_clear;
-}
-
 // Button
 .cmp_button {
 	display: inline-block;
@@ -222,20 +217,6 @@
 		margin-right: 0.25em;
 	}
 
-	.buttons {
-		.pkp_helpers_clear;
-
-		button {
-			&:extend(.cmp_button);
-		}
-
-		a {
-			font-size: @font-sml;
-			line-height: @triple;
-			margin-left: 1em;
-		}
-	}
-
 	@media(min-width: @screen-phone) {
 
 		input[type="text"],
@@ -255,7 +236,6 @@
 	.tagit {
 		&:extend(.pkp_unstyled_list);
 		&:extend(.pkp_form input[type="text"]);
-		.pkp_helpers_clear();
 
 		// overwrite text field styles
 		max-width: 100%;
@@ -355,7 +335,6 @@
 
 	&:before {
 		&:extend(.fa);
-		content: @fa-var-pencil;
 	}
 }
 
