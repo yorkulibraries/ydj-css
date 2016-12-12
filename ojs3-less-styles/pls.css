@@ -49,6 +49,7 @@ a:focus {
 .pkp_structure_footer {
   position: relative;
   width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
@@ -137,6 +138,7 @@ a:focus {
     padding-top: 30px;
   }
   .pkp_structure_sidebar {
+    display: none;
     float: right;
     width: 300px;
   }
@@ -183,6 +185,7 @@ img {
 @media (min-width: 992px) {
   .has_site_logo .pkp_head_wrapper {
     padding-top: 30px;
+    max-width: 800px;
   }
 }
 .pkp_site_name {
@@ -192,8 +195,8 @@ img {
   text-align: center;
 }
 .pkp_site_name > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .pkp_site_name > a:focus {
   outline: 0;
@@ -277,6 +280,7 @@ img {
 }
 .pkp_navigation_user_wrapper {
   position: absolute;
+  background-color: #071F5D;
   top: 0;
   left: 0;
   right: 0;
@@ -306,7 +310,7 @@ img {
 .pkp_navigation_user > li.in_focus > a,
 .pkp_navigation_user > li > a:hover,
 .pkp_navigation_user > li > a:focus {
-  color: #071F5D;
+  color: #fff;
 }
 .pkp_navigation_user li:hover > ul,
 .pkp_navigation_user li:focus > ul,
@@ -1612,6 +1616,7 @@ img {
 .pkp_brand_footer {
   padding: 10px;
   text-align: center;
+  display: none;
 }
 .pkp_brand_footer a {
   display: block;
