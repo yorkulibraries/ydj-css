@@ -37,9 +37,8 @@
 	text-align: center;
 
 	> a {
-		//$ change here to centre header image 		
-		padding-top: @base;
-		padding-bottom: @base;
+		padding-top: 0;
+		padding-bottom: 0;
 
 		&:focus {
 			outline: 0;
@@ -55,12 +54,12 @@
 
 		img {
 			display:block;
-//$ change this if header image 
-			max-height: 80px; // must match height - padding of .is_img
+			max-height: 100%; // must match height - padding of .is_img
 			max-width: 100%;
 			width: auto;
 			height: auto;
-//$ might also need to adjust margin-left and margin-right to auto
+			margin-left:auto;
+			margin-right:auto;
 		}
 	}
 
@@ -80,7 +79,7 @@
 	}
 
 	@media(min-width: @screen-desktop) {
-		text-align: left;
+		text-align: center;
 	}
 }
 

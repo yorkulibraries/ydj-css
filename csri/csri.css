@@ -174,7 +174,7 @@ img {
  * @brief Classes for the page header structural elements
  */
 .pkp_structure_head {
-  background-color: #1E6292;
+  background-color: #1e3965;
   border-bottom: 1px solid #ddd;
 }
 .pkp_head_wrapper {
@@ -192,8 +192,8 @@ img {
   text-align: center;
 }
 .pkp_site_name > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .pkp_site_name > a:focus {
   outline: 0;
@@ -206,10 +206,12 @@ img {
 }
 .pkp_site_name .is_img img {
   display: block;
-  max-height: 80px;
+  max-height: 100%;
   max-width: 100%;
   width: auto;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .pkp_site_name .is_text {
   font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
@@ -226,7 +228,7 @@ img {
 }
 @media (min-width: 992px) {
   .pkp_site_name {
-    text-align: left;
+    text-align: center;
   }
 }
 .pkp_navigation_primary {
@@ -307,7 +309,7 @@ img {
   right: 100%;
   margin-right: 20px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .pkp_head_wrapper .pkp_search .search_cancel:before {
   width: 20px;
@@ -571,10 +573,10 @@ img {
   float: right;
   padding: 10px 0;
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .pkp_structure_main .page .about_section {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
   line-height: 30px;
 }
 .pkp_structure_main .page .about_section .cover {
@@ -770,7 +772,7 @@ img {
   width: 20em;
   padding: 2px;
   border-radius: 3px;
-  background: #1E6292;
+  background: #1e3965;
 }
 .ui-autocomplete:before {
   content: '';
@@ -779,7 +781,7 @@ img {
   left: 1em;
   width: 0;
   height: 0;
-  color: #1E6292;
+  color: #1e3965;
   border-bottom: 5px solid;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
@@ -801,7 +803,7 @@ img {
   margin-top: 20px;
   font-size: 13px;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
   text-align: right;
 }
 .cmp_pagination a {
@@ -863,11 +865,11 @@ img {
   text-decoration: none;
 }
 .cmp_breadcrumbs .separator {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
   padding: 0 0.5em;
 }
 .cmp_breadcrumbs .current {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .cmp_breadcrumbs .current h1 {
   margin: 0;
@@ -1272,7 +1274,7 @@ img {
 }
 .obj_announcement_full .date {
   margin: 16px 0;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .obj_announcement_full .date:before {
   margin-right: 0.5em;
@@ -1312,7 +1314,7 @@ img {
 .obj_announcement_summary .date {
   font-size: 13px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .obj_announcement_summary .date:before {
   margin-right: 0.5em;
@@ -1394,7 +1396,7 @@ img {
 }
 .obj_article_details .authors .affiliation {
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .obj_article_details .item.doi {
   padding-top: 0;
@@ -1429,7 +1431,7 @@ img {
   font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-size: 13px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .obj_article_details .citation_display form textarea {
   max-width: 100%;
@@ -1504,7 +1506,7 @@ img {
 }
 .obj_galley_link.restricted {
   border-color: #fff;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .obj_galley_link.restricted:hover,
 .obj_galley_link.restricted:focus {
@@ -1538,7 +1540,7 @@ img {
 }
 .obj_article_summary .pages,
 .obj_article_summary .published {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .obj_article_summary .galleys_links {
   margin-top: 10px;
@@ -1595,7 +1597,7 @@ img {
 }
 .obj_issue_summary .series {
   margin-bottom: 5px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .obj_issue_summary .description {
   font-size: 13px;
@@ -1702,7 +1704,7 @@ img {
     padding: 0 15px;
     font-size: 16px;
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(0, 0, 0, 0.75);
   }
 }
 @media (min-width: 992px) {
@@ -1740,7 +1742,7 @@ img {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.75);
 }
 .pkp_block .content ul li {
   line-height: 20px;
