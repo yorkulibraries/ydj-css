@@ -1,0 +1,41 @@
+.pkp_site_name,
+.pkp_navigation_primary_wrapper,
+.pkp_navigation_user,
+.pkp_structure_content,
+.pkp_structure_footer {
+	max-width:800px;
+}
+
+@media( min-width: @screen-desktop ) {
+
+	.pkp_structure_sidebar {
+		display:none;
+  }
+}
+
+.pkp_brand_footer {
+	display:none;
+}
+
+.pkp_navigation_primary {
+	> li {
+
+		> a {
+			color: @primary;
+
+			&:hover,
+			&:focus {
+				color: @text-bg-base;
+				border-color: @text-bg-base;
+			}
+		}
+	}
+}
+
+.pkp_navigation_user_wrapper {
+	background-color: @primary;
+}	
+
+.pkp_navigation_user > li > a, .pkp_navigation_user > li.in_focus > a, .pkp_navigation_user > li > a:hover, .pkp_navigation_user > li > a:focus {
+  color: @bg-base;
+}
