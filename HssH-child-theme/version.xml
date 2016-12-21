@@ -5,7 +5,7 @@
 
   <application>HssH-child-theme</application>
   <type>plugins.themes</type>
-  <release>0.0.0.1</release>
+  <release>0.0.0.2</release>
   <date>2016-12-13</date>
   <lazy-load>0</lazy-load>
   <class>HssHThemePlugin</class>
