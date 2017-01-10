@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<version>
+
+  <application>topia-child-theme</application>
+  <type>plugins.themes</type>
+  <release>0.0.0.1</release>
+  <date>2016-12-13</date>
+  <lazy-load>0</lazy-load>
+  <class>topiaThemePlugin</class>
+  
+</version>
