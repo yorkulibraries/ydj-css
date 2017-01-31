@@ -72,6 +72,8 @@ tt {
 /**
  * Main layout elements
  */
+ 
+#issueCoverDescription {font-size:18pt;}
 
 #articleAbstract h4 {
 	display:none
