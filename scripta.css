@@ -9,14 +9,22 @@
  * $Id: common.css,v 1.39 2006/07/01 17:36:16 alec Exp $
  */
  
- /*hidden elements*/
+ /*hidden elements
 
-#about {display:none;}
+#about {display:none;}*/
 
 /* registration form */
 
 input#registerAsReader {
     display:none;
+}
+
+input#registerAsReviewer {
+  display:none;
+}
+
+#reviewerInterestsContainer {
+  display:none;
 }
 
 form#register tr:nth-child(7) {
@@ -74,9 +82,9 @@ form#register tr:nth-child(23) {
 form#register tr:nth-child(25) {
     display:none;
 }
-
+/*
 form#register tr:nth-child(26) {
     display:none;
 }
-
+*/
 
