@@ -6,7 +6,7 @@ class justlabourThemePlugin extends ThemePlugin {
   
   public function init() {
     $this->setParent('defaultthemeplugin');
-    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/header-image.less','styles/custom.less')));
+    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/custom.less')));
   }
   
   public function getDisplayName() {
