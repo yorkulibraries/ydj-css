@@ -12,11 +12,11 @@
 
 .has_site_logo .pkp_site_name, 
 .has_site_logo .pkp_navigation_primary_wrapper {
-  background: #ebecf0;
+  background: @off-white;
 }
 
 .pkp_structure_main {
-  background:#ebecf0;
+  background:@off-white;
   max-width:800px;
 }
 
@@ -33,6 +33,13 @@
   padding-right:30px;
 }
 
-/*.pkp_nav_list ul li {
-  background:@bg-base;
-}*/
+.pkp_navigation_user > li > a,
+.pkp_navigation_user > li.in_focus > a,
+.pkp_navigation_user > li > a:hover,
+.pkp_navigation_user > li > a:focus {
+  color:@off-white;
+}
+
+.pkp_nav_list ul {
+  background:@off-white;
+}
