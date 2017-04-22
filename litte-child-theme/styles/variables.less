@@ -14,12 +14,12 @@
 //
 
 // Background
-@bg:                     #fff;
+@bg:                     #5373a2;
 @bg-shade:               #ddd;
-@bg-base:                #5373a2; // Accent color used in the header
+@bg-base:                @bg; // Accent color used in the header
 
 // Primary "anchor" color for links
-@primary:                @bg-base;
+@primary:                @bg;
 @primary-lift:           lighten(@primary, 10%);
 
 // Yes/no, success/error, on/off, go/stop, etc. Typically green and red.
@@ -29,10 +29,13 @@
 // Text
 @text:                   rgba(0,0,0,0.87);
 @text-light:             rgba(0,0,0,0.54);
-@text-bg-base:           #fff;
+@text-bg-base:           @bg;
 
 // Border colors
 @bg-border-color:        transparent;
+
+// The off-white in Bart's themes
+@off-white: #ebecf0;
 
 //
 // Spacing

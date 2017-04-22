@@ -10,9 +10,36 @@
 	max-width:800px;
 }
 
-@media( min-width: @screen-desktop ) {
+.has_site_logo .pkp_site_name, 
+.has_site_logo .pkp_navigation_primary_wrapper {
+  background: @off-white;
+}
 
-	.pkp_structure_sidebar {
-		display:none;
-  }
+.pkp_structure_main {
+  background:@off-white;
+  max-width:800px;
+}
+
+.pkp_structure_content {
+  padding-top:0;
+  margin-top:-1px;
+}
+
+.pkp_nav_list {
+  padding-left:30px;
+}
+
+.pkp_head_wrapper .pkp_search {
+  padding-right:30px;
+}
+
+.pkp_navigation_user > li > a,
+.pkp_navigation_user > li.in_focus > a,
+.pkp_navigation_user > li > a:hover,
+.pkp_navigation_user > li > a:focus {
+  color:@off-white;
+}
+
+.pkp_nav_list ul {
+  background:@off-white;
 }
