@@ -5,8 +5,8 @@
 
   <application>claudel-child-theme</application>
   <type>plugins.themes</type>
-  <release>0.0.0.1</release>
-  <date>2016-12-13</date>
+  <release>0.0.0.2</release>
+  <date>2017-04-22</date>
   <lazy-load>0</lazy-load>
   <class>claudelThemePlugin</class>
   
