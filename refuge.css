@@ -429,7 +429,7 @@ form#register tr:nth-child(24) {
 /* main elements */
 
 #headerTitle > h1 > img {
-    height:200px;
+    height:100%;
     width:900px;
 	background-color:#CC1D00;
 }
@@ -515,7 +515,7 @@ BACKGROUND-COLOR: #f0f0e8;
 }
 #headerTitle {
 	WIDTH: 900px; 
-	HEIGHT: 50px; 
+/*	HEIGHT: 50px; */
 	BACKGROUND-COLOR:#00FF00; 
 	TEXT-ALIGN: left;
 }
@@ -534,7 +534,7 @@ BACKGROUND-COLOR: #f0f0e8;
 #body {
 	MARGIN: 0px auto; 
 	WIDTH: 900px; 
-	margin-top:145px;
+	margin-top:275px;
 }
 #bottom{
 	background-image: url('footer.jpg'); 
