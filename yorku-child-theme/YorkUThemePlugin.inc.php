@@ -8,27 +8,25 @@ class YorkUThemePlugin extends ThemePlugin {
     $this->setParent('defaultthemeplugin');
     $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/custom.less')));
   
-    $this->addOption('baseColour', 'colour', array(
+    $this->addOption('bgColour', 'colour', array(
 			'label' => 'plugins.themes.default.option.colour.label',
 			'description' => 'plugins.themes.default.option.colour.description',
 			'default' => '#1E6292',
 		));
 		
 		// Store additional LESS variables to process based on options
-		$additionalLessVariables = array();
+		//$additionalLessVariables = array();
 		
 				// Update colour based on theme option
-		if ($this->getOption('baseColour') !== '#1E6292') {
-			$additionalLessVariables[] = '@bg-base:' . $this->getOption('baseColour') . ';';
-			if (!$this->isColourDark($this->getOption('baseColour'))) {
-				$additionalLessVariables[] = '@text-bg-base:rgba(0,0,0,0.84);';
+		if ($this->getOption('bgColour') !== '#1E6292') {
+			$additionalLessVariables[] = '@bg:' . $this->getOption('bgColour') . ';';
+		//	if (!$this->isColourDark($this->getOption('baseColour'))) {
+		//		$additionalLessVariables[] = '@text-bg-base:rgba(0,0,0,0.84);';
 			}
-		}
 
 		// Pass additional LESS variables based on options
-		if (!empty($additionalLessVariables)) {
-			$this->modifyStyle('stylesheet', array('addLessVariables' => join($additionalLessVariables)));
-		}
+	//	if (!empty($additionalLessVariables)) {
+		//	$this->modifyStyle('stylesheet', array('addLessVariables' => join($additionalLessVariables)));
   }
   
   public function getDisplayName() {
