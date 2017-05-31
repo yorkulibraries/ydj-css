@@ -2,15 +2,15 @@
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class jcacsThemePlugin extends ThemePlugin {
+class protemThemePlugin extends ThemePlugin {
   
   public function init() {
     $this->setParent('defaultthemeplugin');
-    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/custom.less','styles/header-image.less')));
-  }  
- 
+    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/custom.less','styles/no-submissions.less','styles/header-image.less')));
+  }
+  
   public function getDisplayName() {
-    return 'jcacs child theme';
+    return 'protem child theme';
   }
   
   public function getDescription() {

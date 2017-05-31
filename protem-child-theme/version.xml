@@ -3,11 +3,11 @@
 
 <version>
 
-  <application>jcacs-child-theme</application>
+  <application>protem-child-theme</application>
   <type>plugins.themes</type>
-  <release>0.0.0.5</release>
+  <release>0.0.0.4</release>
   <date>2016-12-13</date>
   <lazy-load>0</lazy-load>
-  <class>jcacsThemePlugin</class>
+  <class>protemThemePlugin</class>
   
 </version>
