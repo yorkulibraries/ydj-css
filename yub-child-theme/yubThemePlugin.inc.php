@@ -2,11 +2,9 @@
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class yubThemePlugin extends ThemePlugin {
-  
   public function init() {
     $this->setParent('defaultthemeplugin');
-    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/header-image.less','styles/custom.less')));
+    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/header-image.less','styles/custom.less','styles/no-submissions.less')));
   }
   
   public function getDisplayName() {
@@ -17,5 +15,4 @@ class yubThemePlugin extends ThemePlugin {
     return 'This is a custom theme developed by the digital projects team at York University Libraries.';
   }
 }
-
 ?> 
