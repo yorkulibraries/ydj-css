@@ -2,7 +2,7 @@
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class yubThemePlugin extends ThemePlugin {
+class cwsThemePlugin extends ThemePlugin {
   
   public function init() {
     $this->setParent('defaultthemeplugin');
@@ -10,7 +10,7 @@ class yubThemePlugin extends ThemePlugin {
   }
   
   public function getDisplayName() {
-    return 'yub child theme';
+    return 'cws child theme';
   }
   
   public function getDescription() {
