@@ -2,7 +2,7 @@
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class cwsThemePlugin extends ThemePlugin {
+class historicalpapersThemePlugin extends ThemePlugin {
   
   public function init() {
     $this->setParent('defaultthemeplugin');
@@ -10,7 +10,7 @@ class cwsThemePlugin extends ThemePlugin {
   }
   
   public function getDisplayName() {
-    return 'cws child theme';
+    return 'historicalpapers child theme';
   }
   
   public function getDescription() {
