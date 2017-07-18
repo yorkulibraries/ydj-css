@@ -2,6 +2,19 @@
 	display:none;
 }
 
+a {
+  color: @primary;
+  text-decoration: underline;
+    &:hover,
+    &:focus {
+      color: @primary-lift;
+    }
+}
+
+.obj_article_summary > .title a {
+  text-decoration: underline;
+}
+
 /* This is the overall structure for the ubiquitous theme we have courtesy of Bart.*/
 
 
@@ -31,7 +44,7 @@
 .pkp_navigation_user > li.in_focus > a,
 .pkp_navigation_user > li > a:hover,
 .pkp_navigation_user > li > a:focus {
-  color:@off-white;
+  color:primary;
 }
 
 .pkp_nav_list ul {
