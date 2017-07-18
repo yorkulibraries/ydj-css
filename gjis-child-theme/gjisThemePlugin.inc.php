@@ -2,15 +2,15 @@
 
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class hseThemePlugin extends ThemePlugin {
+class gjisThemePlugin extends ThemePlugin {
   
   public function init() {
     $this->setParent('defaultthemeplugin');
-    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/header-image.less','styles/custom.less','styles/sidebar.less')));
+    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/header-image.less','styles/custom.less','styles/no-submissions.less')));
   }
   
   public function getDisplayName() {
-    return 'hse child theme';
+    return 'gjis child theme';
   }
   
   public function getDescription() {
