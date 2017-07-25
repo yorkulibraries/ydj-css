@@ -1,0 +1,60 @@
+
+
+// Site logo/nav on same line on larger screens
+.has_site_logo .pkp_head_wrapper {
+
+	@media(min-width: @screen-desktop) {
+		padding-top: @triple;
+	}
+}
+
+// Site logo/name
+.pkp_site_name {
+	font-size: 2em; // Prevents extra vertical space after logos
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+
+	> a {
+		padding-top: 0;
+		padding-bottom: 0;
+
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	.is_img {
+		display: inline-block;
+
+		&:focus {
+			box-shadow: 0 0 1px @text-bg-base;
+		}
+
+		img {
+			display:block;
+			max-height: 100%; // must match height - padding of .is_img
+			max-width: 100%;
+			width: auto;
+			height: auto;
+			margin-left:auto;
+			margin-right:auto;
+		}
+	}
+
+	@media(min-width: @screen-desktop) {
+		text-align: center;
+	}
+}
+
+.pkp_site_name,
+.pkp_navigation_primary_wrapper,
+.pkp_navigation_user,
+.pkp_structure_content,
+.pkp_structure_footer {
+	max-width:@header-width;
+}
+
+.pkp_structure_main {
+  max-width:@header-width;
+}
