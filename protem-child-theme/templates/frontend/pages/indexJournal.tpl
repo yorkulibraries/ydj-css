@@ -29,20 +29,20 @@
 	{/if}
 <div class="jcarousel">
   <ul id="mycarousel" class="jcarousel-skin-protem">
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem01.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem02.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem03.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem04.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem05.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem06.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem07.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem08.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem09.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem10.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem11.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem12.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem13.jpg" height="275" alt="" /></li>
-    <li><img src="{$baseUrl}/templates/images/protem_carousel/protem14.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem01.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem02.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem03.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem04.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem05.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem06.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem07.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem08.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem09.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem10.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem11.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem12.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem13.jpg" height="275" alt="" /></li>
+    <li><img src="{$baseUrl}/plugins/themes/protem-child-theme/protem_carousel/protem14.jpg" height="275" alt="" /></li>
   </ul>
 <div>
 	{* Announcements *}

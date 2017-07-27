@@ -8,7 +8,8 @@ class protemThemePlugin extends ThemePlugin {
     $this->setParent('defaultthemeplugin');
     $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/header-image.less','styles/custom.less','styles/no-submissions.less','styles/jquery.jcarousel.css','styles/skin.css')));
   
-   $this->addScript('carousel', 'js/jquery.jcarousel-core.min.js');
+   $this->addScript('carousel','js/jquery.jcarousel.min.js');
+   $this->addScript('carousel','js/general.js');
   }
   
   public function getDisplayName() {
