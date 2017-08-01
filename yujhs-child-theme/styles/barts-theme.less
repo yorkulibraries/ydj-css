@@ -13,6 +13,7 @@
 .pkp_structure_content {
   padding-top:0;
   margin-top:-1px;
+  background: #fff;
 }
 
 .pkp_nav_list {
@@ -23,14 +24,20 @@
   padding-right:30px;
 }
 
-.pkp_navigation_user > li > a,
-.pkp_navigation_user > li.in_focus > a,
-.pkp_navigation_user > li > a:hover,
-.pkp_navigation_user > li > a:focus {
-  color:@off-white;
+.pkp_navigation_user > li > a {
+  color: @primary;
+    &:hover,
+    &:focus {
+      color: @primary-lift;
+    }
 }
 
+.pkp_nav_list a {
+  color: @primary;
+}
+
+/*
 .pkp_nav_list ul {
   background:@off-white;
 }
-
+*/
