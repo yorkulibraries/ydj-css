@@ -4,34 +4,42 @@
 
 .cmp_button_wire,
 .obj_galley_link {
-  color:#000;
+  color:@accent;
 }
 
 .obj_issue_toc .galleys h2,
 .obj_issue_toc .section h2 {
   background: transparent;
-  color:#000;
+  color:@accent;
 }
 
 .cmp_button_wire:hover,
 .cmp_button_wire:focus,
 .obj_galley_link:hover,
 .obj_galley_link:focus {
-  color: #000;
+  color: @accent;
 }
 
 .pkp_navigation_user > li > a,
 .pkp_navigation_user > li.in_focus > a,
 .pkp_navigation_user > li > a:hover,
 .pkp_navigation_user > li > a:focus {
-  color:#000;
+  color:@accent;
 }
 
 .pkp_nav_list ul {
   background:#fff;
-  color:#000;
+  color:@accent;
 }
 
 .pkp_nav_list ul a {
-  color: #000;
+  color: @accent;
+}
+
+.pkp_structure_content.has_sidebar > .pkp_structure_main {
+  max-width: 70%;
+}
+
+.pkp_structure_content.has_sidebar > .pkp_structure_sidebar {
+  max-width: 30%;
 }
