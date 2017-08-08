@@ -8,12 +8,33 @@ body {
 
 .pkp_structure_head {
   background-color: transparent;
+  border-bottom: 0px;
 }
 
-.pkp_content_main {
+#pkp_content_main {
   background: @bg;
+  max-width: @header-image-width;
 }
 
+.pkp_site_name_wrapper,
+.pkp_site_name,
+.pkp_navigation_user_wrapper,
+.pkp_navigation_user  {
+  max-width: @header-image-width;
+}
+
+.pkp_structure_content {
+  padding-top: 0px;
+}
+
+.pkp_head_wrapper {
+  max-width: @header-width;
+}
+
+#pkp_content_nav {
+  background: @navbar;
+  max-width: @header-image-width;
+}
 //Some helpful customizations
 
 //Uncomment this if you want to change the colour of the links and background for the admin menu at the top-right corner.
