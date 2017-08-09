@@ -6,7 +6,7 @@ class htThemePlugin extends ThemePlugin {
   
   public function init() {
     $this->setParent('defaultthemeplugin');
-    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/header-image.less','styles/custom.less','styles/no-submissions.less','styles/sidebar.less')));
+    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/header-image.less','styles/custom.less','styles/no-submissions.less','styles/sidebar.less','styles/floating-sidebar.less')));
   }
   
   public function getDisplayName() {
