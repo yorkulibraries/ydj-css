@@ -6,7 +6,7 @@ class etopiaThemePlugin extends ThemePlugin {
   
   public function init() {
     $this->setParent('defaultthemeplugin');
-    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/custom.less','styles/jquery.jcarousel.css','styles/skin.css')));
+    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/custom.less','styles/sidebar.less')));
   }
     
   public function getDisplayName() {
