@@ -10,45 +10,15 @@
     background-color: #C33800;
 }
 
+.current_issue {
+  display: none;
+}
 
+//Some helpful customizations
 
-
-
-
-
-/* This is the overall structure for the ubiquitous theme we have courtesy of Bart.*/
-
+//Uncomment this if you want to change the colour of the links and background for the admin menu at the top-right corner.
+//(This is taken from barts-theme.less, so if you're included it you don't need it here.
 /*
-.pkp_site_name,
-.pkp_navigation_primary_wrapper,
-.pkp_navigation_user,
-.pkp_structure_content,
-.pkp_structure_footer {
-	max-width:800px;
-}
-
-.has_site_logo .pkp_site_name, 
-.has_site_logo .pkp_navigation_primary_wrapper {
-  background: @off-white;
-}
-
-.pkp_structure_main {
-  background:@off-white;
-  max-width:800px;
-}
-.pkp_structure_content {
-  padding-top:0;
-  margin-top:-1px;
-}
-
-.pkp_nav_list {
-  padding-left:30px;
-}
-
-.pkp_head_wrapper .pkp_search {
-  padding-right:30px;
-}
-
 .pkp_navigation_user > li > a,
 .pkp_navigation_user > li.in_focus > a,
 .pkp_navigation_user > li > a:hover,
@@ -58,5 +28,22 @@
 
 .pkp_nav_list ul {
   background:@off-white;
+}
+*/
+
+//This helps you control the width of the page. In case you don't like the defaults.
+//(This is also in 'header-image.less')
+//You can also use this in conjunction with 'sidebar.less' to finesse your layout without having to include 'header-image.less'.
+/*
+.pkp_site_name,
+.pkp_navigation_primary_wrapper,
+.pkp_navigation_user,
+.pkp_structure_content,
+.pkp_structure_footer {
+	max-width:@header-width;
+}
+
+.pkp_structure_main {
+  max-width:@header-width;
 }
 */
