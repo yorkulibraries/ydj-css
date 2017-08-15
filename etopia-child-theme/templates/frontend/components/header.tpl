@@ -70,20 +70,13 @@
 					{/if}
 				</div>
 
+							  	{* Search form 
+							{include file="frontend/components/searchForm_simple.tpl"} *}
+							
 							{* Primary site navigation *}
-				{if $currentContext}
-					<nav id="pkp_content_nav" class="pkp_navigation_primary_row navDropdownMenu" aria-label="{translate|escape key="common.navigation.site"}">
-						<div class="pkp_navigation_primary_wrapper">
-							{* Primary navigation menu for current application *}
-							{include file="frontend/components/primaryNavMenu.tpl"}
-
-							{* Search form *}
-							{include file="frontend/components/searchForm_simple.tpl"}
-						</div>
-					</nav>
-				{/if}
 
 				<nav class="pkp_navigation_user_wrapper navDropdownMenu" id="navigationUserWrapper" aria-label="{translate|escape key="common.navigation.user"}">
+				
 					<ul id="navigationUser" class="pkp_navigation_user pkp_nav_list">
 						{if $isUserLoggedIn}
 							<li class="profile {if $unreadNotificationCount} has_tasks{/if}" aria-haspopup="true" aria-expanded="false">
@@ -130,6 +123,7 @@
 									{/if}
 								</ul>
 							</li>
+							
 						{else}
 							{if !$disableUserReg}
 								<li><a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
@@ -147,6 +141,16 @@
 			{assign var=hasSidebar value=0}
 		{/if}
 		<div class="pkp_structure_content{if $hasSidebar} has_sidebar{/if}">
+			{if $currentContext}
+					<nav id="pkp_content_nav" class="pkp_navigation_primary_row navDropdownMenu" aria-label="{translate|escape key="common.navigation.site"}">
+						<div class="pkp_navigation_primary_wrapper">
+							{* Primary navigation menu for current application *}
+							{include file="frontend/components/primaryNavMenu.tpl"}
+
+							
+						</div>
+					</nav>
+				{/if}
 			<div id="pkp_content_main" class="pkp_structure_main" role="main">
-			
+		
 
