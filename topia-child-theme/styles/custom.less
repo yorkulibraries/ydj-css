@@ -1,0 +1,108 @@
+.pkp_brand_footer {
+	display:none;
+}
+/*
+.pkp_structure_head {
+  background-image: url('/ojs/plugins/themes/topia-child-theme/topia_theader2.jpg');
+  background-repeat: no-repeat;
+}
+*/
+.pkp_structure_content {
+  background-image: url('/ojs/plugins/themes/topia-child-theme/topia_background.jpg');
+  background-repeat: repeat-y;
+  padding-top: 0px;
+}
+
+.pkp_structure_main h1, .pkp_structure_main h2, .pkp_structure_main h3, .pkp_structure_main h4 {
+  margin-top: 0px;
+  line-height: 20px;
+}
+
+ul.pkp_navigation_primary > li {
+  display: block;
+} 
+
+ul.pkp_navigation_primary > li > a {
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 0;
+}
+
+.pkp_structure_main {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.pkp_block {
+  padding-top: 0px;
+}
+
+.pkp_site_name .is_text {
+  color: @primary;
+}
+
+.obj_issue_toc .galleys h2,
+.obj_issue_toc .section h2,
+.pkp_structure_main h2 {
+  color: #ef6930;
+}
+
+#pkp_content_nav {
+  width: 10%;
+  float: left;
+}
+
+.pkp_structure_content.has_sidebar #pkp_content_main {
+  width: 60%;
+}
+
+.pkp_structure_content #pkp_content_main {
+  width: 60%;
+}
+
+.pkp_structure_sidebar.left {
+  width: 25%;
+}
+
+.pkp_navigation_primary_wrapper {
+  width: 100%;
+}
+
+.pkp_search {
+  top: unset;
+  right: unset;
+}
+
+//Some helpful customizations
+
+//Uncomment this if you want to change the colour of the links and background for the admin menu at the top-right corner.
+//(This is taken from barts-theme.less, so if you're included it you don't need it here.
+/*
+.pkp_navigation_user > li > a,
+.pkp_navigation_user > li.in_focus > a,
+.pkp_navigation_user > li > a:hover,
+.pkp_navigation_user > li > a:focus {
+  color:@off-white;
+}
+
+.pkp_nav_list ul {
+  background:@off-white;
+}
+*/
+
+//This helps you control the width of the page. In case you don't like the defaults.
+//(This is also in 'header-image.less')
+//You can also use this in conjunction with 'sidebar.less' to finesse your layout without having to include 'header-image.less'.
+/*
+.pkp_site_name,
+.pkp_navigation_primary_wrapper,
+.pkp_navigation_user,
+.pkp_structure_content,
+.pkp_structure_footer {
+	max-width:@header-width;
+}
+
+.pkp_structure_main {
+  max-width:@header-width;
+}
+*/

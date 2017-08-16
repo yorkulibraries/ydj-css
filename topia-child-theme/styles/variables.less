@@ -9,44 +9,49 @@
  *  fully separated interface for defining variables, so that changes desired on
  *  the frontend won't impact the backend.
  */
-//
-// Colors
-//
-// custom variables
+/*
+ Colors
+*/
 
-@green: #87AE00;
-@teal:#375;
-
-// Background
+/* Background */
 @bg:                     #3E4447;
 @bg-shade:               #ddd;
-@bg-base:                #3E4447; // Accent color used in the header
+@bg-base:                #1E6292; // Accent color used in the header
 
-// Primary "anchor" color for links
-@primary:                #FFFFFF;
+/* Primary "anchor" color for links */
+@primary:                #87AE00;
 @primary-lift:           lighten(@primary, 10%);
 
-// Yes/no, success/error, on/off, go/stop, etc. Typically green and red.
+/* Yes/no, success/error, on/off, go/stop, etc. Typically green and red. */
 @yes:                    #00b24e;
 @no:                     #ff4040;
 
-// Text
+/* Text */
 @text:                   #fff;
 @text-light:             rgba(0,0,0,0.54);
-@text-bg-base:           #007ab2;
+@text-bg-base:           #fff;
 
-// Border colors
+/* Border colors */
 @bg-border-color:        transparent;
 
-//
-// Spacing
-//
-// The baseline size should be used to achieve consistent vertical rhythm. All
-// vertical margins, padding, line-height and block heights should use a
-// multiple of this baseline (or half). Where appropriate, horizontal
-// spacings should also use this baseline. However, in some cases with inline
-// elements it is more appropriate to use an `em` spacing.
-//
+/* The off-white in Bart's themes */
+@off-white: #ebecf0;
+
+/* The header image width sets the max-width of the layout. Must be used if you're using 'header-image.less' or 'sidebar.less' 
+
+@header-image-width should be the exact width of the image. You only need this for the floating sidebar. You want to make sure the @header-width makes room for the side menus.w
+*/
+@header-width: 100%;
+@header-image-width: 619px;
+
+/* If you are doing sidebars and want to mess with the width*/
+@sidebar-content-width: 60%;
+@sidebar-width: 30%; 
+
+/* Spacing
+
+The baseline size should be used to achieve consistent vertical rhythm. All vertical margins, padding, line-height and block heights should use a multiple of this baseline (or half). Where appropriate, horizontal spacings should also use this baseline. However, in some cases with inline elements it is more appropriate to use an `em` spacing.
+*/
 @base:                   10px;
 @half:                   @base / 2;
 @double:                 @base * 2;
