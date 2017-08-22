@@ -1,12 +1,7 @@
 .pkp_brand_footer {
 	display:none;
 }
-/*
-.pkp_structure_head {
-  background-image: url('/ojs/plugins/themes/topia-child-theme/topia_theader2.jpg');
-  background-repeat: no-repeat;
-}
-*/
+
 .pkp_structure_content {
   background-image: url('/ojs/plugins/themes/topia-child-theme/topia_background.jpg'); 
   background-repeat: repeat-y;
@@ -18,6 +13,16 @@
   line-height: 20px;
 }
 
+.pkp_structure_main {
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 20%;
+}
+/*
+.pkp_structure_content.has_sidebar .pkp_structure_sidebar.left {
+  width: @sidebar-width;
+}*/
+
 ul.pkp_navigation_primary > li {
   display: block;
 } 
@@ -28,10 +33,8 @@ ul.pkp_navigation_primary > li > a {
   padding-top: 0;
 }
 
-.pkp_structure_main {
-  padding-top: 0;
-  margin-top: 0;
-  margin-left: 17%;
+.pkp_head_wrapper {
+  max-width: @header-width;
 }
 
 .pkp_block {
