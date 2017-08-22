@@ -18,6 +18,10 @@
     display: none;
 }
 
+#articleAbstract > div {
+  text-align: justify;
+}
+
 /**
  * Common HTML elements
  */
