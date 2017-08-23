@@ -14,14 +14,18 @@
 }
 
 .pkp_structure_main {
-  padding-top: 0;
-  margin-top: 0;
-  margin-left: 20%;
+  padding-top: 2%;
+  margin-top: 0px;
+  margin-left: 7%;
 }
-/*
-.pkp_structure_content.has_sidebar .pkp_structure_sidebar.left {
-  width: @sidebar-width;
-}*/
+
+.pkp_block.block_information > span.title {
+  color: #ef6930;
+}
+
+.pkp_site_name > a {
+  padding-bottom: 0px;
+}
 
 ul.pkp_navigation_primary > li {
   display: block;
@@ -33,12 +37,17 @@ ul.pkp_navigation_primary > li > a {
   padding-top: 0;
 }
 
-.pkp_head_wrapper {
+.pkp_head_wrapper,
+.pkp_navigation_user {
   max-width: @header-width;
 }
 
 .pkp_block {
   padding-top: 0px;
+}
+
+.pkp_structure_head {
+  border-bottom: none;
 }
 
 .pkp_site_name .is_text {
@@ -49,11 +58,14 @@ ul.pkp_navigation_primary > li > a {
 .obj_issue_toc .section h2,
 .pkp_structure_main h2 {
   color: #ef6930;
+  background-color: transparent;
 }
 
 #pkp_content_nav {
   width: 10%;
   float: left;
+  margin-left: 2%;
+  margin-top: 2%;
 }
 
 .pkp_search {
@@ -75,22 +87,5 @@ ul.pkp_navigation_primary > li > a {
 
 .pkp_nav_list ul {
   background:@off-white;
-}
-*/
-
-//This helps you control the width of the page. In case you don't like the defaults.
-//(This is also in 'header-image.less')
-//You can also use this in conjunction with 'sidebar.less' to finesse your layout without having to include 'header-image.less'.
-/*
-.pkp_site_name,
-.pkp_navigation_primary_wrapper,
-.pkp_navigation_user,
-.pkp_structure_content,
-.pkp_structure_footer {
-	max-width:@header-width;
-}
-
-.pkp_structure_main {
-  max-width:@header-width;
 }
 */
