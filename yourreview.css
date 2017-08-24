@@ -36,8 +36,22 @@
     }
 
 #subtitle h2 {
-    font-size:1.5em;
+    font-size:1.7em;
     font-weight:bold;
+    line-height: 150%;
+}
+
+/*div.img {
+    text-align:center;
+    
+}*/
+
+div.img > img {
+  width: 500px;
+}
+
+p.caption {
+    width:500px;
 }
 
 body {
@@ -258,6 +272,7 @@ input.defaultButton {
 	font-size: 0.90em;
 	border-top: 1px solid #caa9db;
 	line-height:140%;
+	text-align: justify;
 }
 
 #content h3 {
@@ -265,7 +280,7 @@ input.defaultButton {
 	padding-top: 0.75em;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
-	font-size: 1.8em;
+	font-size: 1.5em;
 	line-height: 1.35em;
 }
 
@@ -274,7 +289,7 @@ input.defaultButton {
 	padding-top: 0.75em;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 #content h5 {
