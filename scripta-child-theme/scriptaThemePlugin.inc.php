@@ -6,7 +6,7 @@ class scriptaThemePlugin extends ThemePlugin {
   
   public function init() {
     $this->setParent('defaultthemeplugin');
-    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/header-image.less','styles/custom.less','styles/sidebar.less')));
+    $this->modifyStyle('stylesheet', array('addLess' => array('styles/variables.less','styles/custom.less','styles/header-image.less')));
   }
   
   public function getDisplayName() {
