@@ -70,8 +70,10 @@
 						</div>
 					</nav>
 				{/if}
-	<p>why</p>
-	<!--
+
+<script type="text/javascript" src="http://localhost:8000/ojs/plugins/themes/cjs-child-theme/js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="http://localhost:8000/ojs/plugins/themes/cjs-child-theme/js/general.js">	</script>
+	
 <div class="jcarousel-wrapper">
   <div class="jcarousel">
     <ul id="mycarousel">
@@ -95,11 +97,8 @@
       <li><img src="http://localhost:8000/ojs/plugins/themes/cjs-child-theme/media/cjs-banner18.jpg" alt="carousel image" /></li>
     </ul>
   </div>
-</div>-->
+</div>
 
-<script type="mce-text/javascript" src="http://localhost:8000/ojs/plugins/themes/cjs-child-theme/js/jquery.jcarousel.min.js"></script>
-<script type="mce-text/javascript" src="http://localhost:8000/ojs/plugins/themes/cjs-child-theme/js/general.js"></script>
-	
 	{* Latest issue *}
 	{if $issue}
 		<div class="current_issue">

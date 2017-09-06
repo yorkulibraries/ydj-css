@@ -17,9 +17,12 @@
 			| {$currentContext->getLocalizedName()}
 		{/if}
 	</title>
-	<!--
-<script type="text/javascript" src="http://localhost:8000/ojs/plugins/themes/cjs-child-theme/js/jquery.jcarousel.min.js"></script>
-<script type="text/javascript" src="http://localhost:8000/ojs/plugins/themes/cjs-child-theme/js/general.js">	-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js" type="text/javascript"></script>
+	<script type="mce-text/javascript" src="http://localhost:8000/ojs/plugins/themes/cjs-child-theme/js/jquery.jcarousel.min.js"></script>
+<script type="mce-text/javascript" src="http://localhost:8000/ojs/plugins/themes/cjs-child-theme/js/general.js"></script>
+	
 	{load_header context="frontend"}
 	{load_stylesheet context="frontend"}
 </head>
