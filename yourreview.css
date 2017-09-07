@@ -41,10 +41,9 @@
     line-height: 150%;
 }
 
-/*div.img {
+div.img {
     text-align:center;
-    
-}*/
+}
 
 div.img > img {
   width: 500px;
