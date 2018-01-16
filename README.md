@@ -1,5 +1,7 @@
 #Getting Started
 
+(I personally have been using [PKP's own vagrant setup for my local dev and testing][vagrant]. Its an easy-ish way to get setup for testing before pushing to production -- especially if you aren't very familiar with OJS3).
+
 1. Clone this repo. `git clone git@github.com:yorkulibraries/ydj-css.git`
 2. Change to ydj-css directory. (If you've previously cloned, make sure to pull any changes before doing work `git pull`)
 3. Switch from master branch to ojs3 `git checkout ojs3`. (Pull any changes if necessary `git pull`). 
@@ -21,6 +23,5 @@
     - Inside the plugin's directory is another called 'styles' and this is where all the custom .less, css, or javascript should be placed. The YorkU child-theme template current has two files in the styles directory:
         1. header-image.less: This file has the basic set of less instructions for having a large image header. You might need to make changes to customize things like width and such.
         2. variables.less: All the variables used then less is compiled to css. Many changes a lot of people want will be here.
-2. 
-    
-    
+
+[vagrant]: https://github.com/pkp/vagrant
